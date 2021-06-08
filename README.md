@@ -9,8 +9,8 @@
  4.
  5.
 - Listado del grupo con una breve descripción de cada uno:
- .Emilio Alposta: 30 años, de CABA. Desarrollador front-end en Globant.
- .Matías Sánchez:
- .Nestor Miguens:
- .Cristian Sánchez:
+ - Emilio Alposta: 30 años, de CABA. Desarrollador front-end en Globant.
+ - Matías Sánchez:
+ - Nestor Miguens:
+ - Cristian Sánchez:
 - Link del tablero de trabajo en donde se encuentran trabajando: https://trello.com/b/F8j7uNKX/dh-tp-integrador
