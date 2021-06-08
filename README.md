@@ -9,7 +9,7 @@
  4.
  5.
 - Listado del grupo con una breve descripción de cada uno:
- .Emilio Alposta:
+ .Emilio Alposta: 30 años, de CABA. Desarrollador front-end en Globant.
  .Matías Sánchez:
  .Nestor Miguens:
  .Cristian Sánchez:
