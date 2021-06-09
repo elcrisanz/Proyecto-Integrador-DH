@@ -12,5 +12,5 @@
   Emilio Alposta: 30 años, de CABA. Desarrollador front-end en Globant.
   Matías Sánchez: 37 años, de Cordoba, Contador Publico, Gerente de Drogueria/Farmacia.
   Nestor Miguens:
-  Cristian Sánchez:
+  Cristian Sánchez: 33 años, de Córdoba, Sales Executive en PedidosYa.
 - Link del tablero de trabajo en donde se encuentran trabajando: https://trello.com/b/F8j7uNKX/dh-tp-integrador
