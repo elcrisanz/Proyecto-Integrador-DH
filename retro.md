@@ -19,9 +19,9 @@
     * _Tenemos muchas ideas y herramientas para aplicar. Pienso que el orden es esencial._
 
 * **Nestor Miguens:**
-    * _RESPONDER AQUI_
-    * _RESPONDER AQUI_
-    * _RESPONDER AQUI_
+    * _Me senti muy bien, ya que las personas que conforman el grupo tienen mucha predisposicion .
+    * _Resaltaria como fundamental el trabajo en equipo.
+    * _No veo por ahora algo para mejorar o cambiar.
 
 * **Cristian Sánchez:**
     * _RESPONDER AQUI_
