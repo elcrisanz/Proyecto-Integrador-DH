@@ -14,9 +14,9 @@
     * _Me parece muy temprano como para poder decir, pero hicimos los wireframes pensándolo a priori en su uso para la computadora y no para dispositivos móviles, aunque un par de ideas sobre eso surgieron, no tenemos diagramas sobre cómo se deberían ver las distintas vistas para estos dispositivos._
 
 * **Matías Sánchez:**
-    * _RESPONDER AQUI_
-    * _RESPONDER AQUI_
-    * _RESPONDER AQUI_
+    * _Fue mi primer sprint, me senti muy comodo y recibi el apoyo de todo el grupo. Todos congeniamos con facilidad._
+    * _La disponibilidad del equipo para la solucion rapida de las consignas. Mantener la empatia._
+    * _Tenemos muchas ideas y herramientas para aplicar. Pienso que el orden es esencial._
 
 * **Nestor Miguens:**
     * _RESPONDER AQUI_
