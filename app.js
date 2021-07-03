@@ -3,7 +3,7 @@ const app = express()
 const path = require('path');
 
 app.get('/', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/home.html'));
+  res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
 
 app.get('/Login', (req,res) =>{
@@ -16,6 +16,10 @@ app.get('/Registro', (req,res) =>{
 
 app.get('/Carrito', (req,res) =>{
   res.sendFile(path.resolve(__dirname, './views/carrito-de-compras.html'));
+});
+
+app.get('/Producto', (req,res) =>{
+  res.sendFile(path.resolve(__dirname, './views/producto.html'));
 });
 
 app.use(express.static(path.resolve(__dirname, './public')));
