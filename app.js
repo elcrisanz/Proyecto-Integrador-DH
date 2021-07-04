@@ -19,6 +19,7 @@ app.get('/Carrito', (req,res) =>{
 });
 
 app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.static(path.resolve(__dirname, './views')));
 
 
 app.listen(3000, function() {
