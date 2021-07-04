@@ -1,0 +1,223 @@
+/* ESTILOS GENERALES */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{   
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+
+}
+
+/* ESTILOS HEADER */
+
+.main-header{
+    background-color: #F2DAC4;
+}
+
+/* Mitad superior - Logo, barra, lupa, registro, login y favoritos */
+
+.main-header-top-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+}
+.logo{
+    width: auto;
+}
+.search-bar-box{
+    width: 100%;
+    display: flex;
+    max-width: 700px;
+}
+.search-bar{
+    height: 39px;
+    width: 100%;
+    font-size: 18px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 0 rgba(0,0,0,.2);
+    padding-left: 10px;
+    font-family: inherit;
+
+}
+.search-bar-btn{
+    width: 46px;
+    border: 0 rgba(0,0,0,.2);
+    background-color: #fff;
+    height: 35px;
+    z-index: 1;
+    right: 55px;
+    margin: auto;
+    position: relative;
+}
+.search-icon{
+    font-size: x-large;
+}
+.login-icon, .chart-icon, .fav-icon{
+    padding-bottom: 7px;
+}
+.nav-right, .nav-left{
+    list-style: none;
+    display: flex;
+}
+.nav-right{
+    padding-right: 25px;
+}
+
+/* Nav inferior */
+
+.nav-left li {
+    padding: 0px 18px 12px;
+    font-size: larger;
+}
+.nav-right li{
+    padding: 12px;
+    margin: auto;
+    text-align: center;
+}
+.nav-left{
+    justify-content: center;
+}
+.down-arrow {
+    padding: 0px 8px;
+    position: relative;
+    bottom: -3px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.burger-icon{
+    background-color: #000000;
+    padding: 2%;
+    color: white;
+    border-radius: 15%;
+    margin-left: 45%;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.burger-menu{
+    display: none;
+}
+
+/* ESTILOS FOOTER */
+.main-footer{
+    background-color: #F2DAC4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-titles{
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+.footer-list{
+    list-style: none;
+    padding: 10px 30px;
+}
+.main-footer-left-box{
+    display: flex;
+    justify-content: space-between;
+}
+.main-footer-left-box li{
+    padding-bottom: 10px;
+}
+.main-footer-right-box{
+    display: flex;
+    font-size: 13px;
+    text-align: left;
+    padding-right: 7vh;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+.main-footer-right-box i{
+    font-size: xx-large;
+    position: relative;
+    top: 1.5rem;
+    right: 2.5rem;
+}
+.location-icon{
+    color: #E61A23;
+}
+.wtsp-icon{
+    color: #4DCC5B;
+}
+.insta-icon{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fcbk-icon{
+    color: #3b5998;
+}
+.mail-icon{
+    color: #C92C19;
+}
+
+@media screen and (max-width: 415px){
+    .main-header-top-bar li{
+        display: none;
+    }
+    .main-header-top-bar{
+        height: 110px;
+    }
+    .logo{
+        max-width: 70%;
+        max-height: 70%;
+    }
+    .main-header-bottom-bar{
+        display: none;
+    }
+    .search-bar-box{
+        flex-direction: column;
+        padding-top: 20px;
+      
+    }
+    .search-bar-btn{
+        right: 0px;
+        top: -45px;
+        left: 78px;
+    }
+    .search-bar{
+        font-size: 12px;
+    }
+    .burger-icon{
+        display: inline-block;
+        position: absolute;
+        top: -33px;
+        left: -120px;
+    }
+    .burger-menu{
+        display: flex;
+        position: relative;
+    }
+    .main-footer{
+        flex-direction: column;
+    }
+    .main-footer-right-box li{
+        display: none;
+    }
+    .main-footer-right-box{
+        display: flex;
+        justify-content: space-between;
+        top: -30px;
+        left: 8vh;
+    }
+    .main-footer-right-box i{
+        font-size: xx-large;
+        /* position: relative; */
+        /* top: 1.5rem; */
+        /* right: 2.5rem; */
+         padding: 6px;
+    }     
+
+}
