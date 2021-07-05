@@ -1,16 +1,11 @@
 
 /* ESTILOS GENERALES */
-/* *{
+*{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-}
-
-body{   
     font-family: 'Raleway', sans-serif;
-    font-size: 12px;
-
-} */
+    margin: 0;
+    padding: 0;
+}
 
 /* ESTILOS HEADER */
 
@@ -89,10 +84,10 @@ body{
     bottom: -3px;
 }
 
-/* a{
+a{
     text-decoration: none;
     color: #000000;
-} */
+}
 .burger-icon{
     background-color: #000000;
     padding: 2%;
@@ -153,7 +148,6 @@ body{
 .insta-icon{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
-            /* Also define standard property for compatibility */
             background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -215,21 +209,14 @@ body{
     }
     .main-footer-right-box i{
         font-size: xx-large;
-        /* position: relative; */
-        /* top: 1.5rem; */
-        /* right: 2.5rem; */
-         padding: 6px;
+        padding: 6px;
     }     
 
 }
-*{
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-}
 
-/* body{
-    background-color: #e8eaea;
-} */
+/* /////////////////////////// */
+/* aca empieza el login1 */
+/* /////////////////////////// */
 
 .login{
     background-color: #F2DAC4;
@@ -295,7 +282,9 @@ body{
   opacity: 1;
 }
 
+/* /////////////////////////// */
 /* Carrito de compras */
+/* /////////////////////////// */
 
 #carrito{
     background-color: #a9abab;
@@ -383,6 +372,13 @@ body{
     margin: 5%;
     font-size: 30px;
 }
+
+
+/* /////////////////////////// */
+/* aca empieza el registro */
+/* /////////////////////////// */
+
+
 .correo{
     font-size:5px;
 }
