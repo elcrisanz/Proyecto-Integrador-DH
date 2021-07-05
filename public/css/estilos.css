@@ -250,7 +250,7 @@
     width: 46px;
     border: 0 rgba(0,0,0,.2);
     background-color: #fff;
-    height: 35px;
+    height: 39px;
     z-index: 1;
     right: 55px;
     margin: auto;
@@ -266,8 +266,14 @@
     list-style: none;
     display: flex;
 }
+.nav-left{
+    margin-bottom: 0;
+}
 .nav-right{
     padding-right: 25px;
+}
+.nav-right-mobile{
+    display: none;
 }
 
 /* Nav inferior */
@@ -289,19 +295,36 @@
     position: relative;
     bottom: -3px;
 }
-
+.header-drop-down{
+    list-style: none;
+    font-size: 12px;
+    display: none;
+    position: relative;
+    right: 18px;
+    top: 10px;
+}
+.header-drop-down li{
+    line-height: 0.8rem;
+}
+.nav-left li:hover ul{
+    display: inline;
+}
+.nav-left li:hover i{
+    display: none;
+}
 a{
     text-decoration: none !important;
     color: #000000 !important;
 }
 .burger-icon{
-    background-color: #000000;
+    background-color: #fff;
     padding: 2%;
-    color: white;
+    color: #000000;
     border-radius: 15%;
     margin-left: 45%;
     margin-top: 15px;
     font-size: 20px;
+    z-index: 200;
 }
 .burger-menu{
     display: none;
@@ -315,9 +338,10 @@ a{
     justify-content: space-between;
 }
 .footer-titles{
+    font-weight: bold;
     padding-bottom: 10px;
     padding-left: 30px;
-    font-size: 15px;
+    font-size: 17px;
 }
 .footer-list{
     list-style: none;
@@ -374,6 +398,23 @@ a{
     .logo{
         max-width: 70%;
         max-height: 70%;
+    }
+    .nav-right-mobile{
+        display: flex;
+        z-index: 200;
+        list-style: none;
+        position: relative;
+        margin: 0;
+    }
+    .login-icon, .chart-icon{
+        position: absolute;
+        left: 21rem;
+        top: -25px;
+        font-size: 1.3rem;
+        padding-bottom: 0;
+    }
+    .login-icon{
+        left: 19rem;
     }
     .main-header-bottom-bar{
         display: none;
