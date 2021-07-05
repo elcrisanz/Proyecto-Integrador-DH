@@ -24,9 +24,9 @@
     * _No veo por ahora algo para mejorar o cambiar.
 
 * **Cristian Sánchez:**
-    * _RESPONDER AQUI_
-    * _RESPONDER AQUI_
-    * _RESPONDER AQUI_
+    * _Creo que fue un muy buen Sprint. Enseguida pudimos organizarnos con el equipo, entendiendo cada uno su rol y desde dónde puede aportar más.
+    * _La velocidad con la que nos organizamos y nos pusimos en acción.
+    * _Fue un Sprint corto como para encontrar cosas a cambiar. Creo que vamos por muy buen camino.
 
 ## Conclusión:
 _En base a nuestras respuestas poner aqui alguna conclusion motivacional en conjunto_
