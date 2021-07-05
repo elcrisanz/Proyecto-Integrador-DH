@@ -1,5 +1,6 @@
+
 /* ESTILOS GENERALES */
-*{
+/* *{
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
@@ -9,7 +10,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
 
-}
+} */
 
 /* ESTILOS HEADER */
 
@@ -88,10 +89,10 @@ body{
     bottom: -3px;
 }
 
-a{
+/* a{
     text-decoration: none;
     color: #000000;
-}
+} */
 .burger-icon{
     background-color: #000000;
     padding: 2%;
@@ -221,3 +222,213 @@ a{
     }     
 
 }
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* body{
+    background-color: #e8eaea;
+} */
+
+.login{
+    background-color: #F2DAC4;
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    height: 600px;
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+
+.controlForm{
+    padding: 10px;
+    margin: 1px;
+}
+
+/* input::placeholder{
+    font-size: 150%;
+    font-weight: bold;
+} */
+
+#fpassword {
+    text-align: right;
+    padding-right: 17%;
+    font-size: 1rem;
+    display:block;
+    padding-bottom: 25px;
+}
+
+#inicio{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#crearcta{
+    font-size: 1rem;
+    padding: 20px;
+}
+
+#fb, #google {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+#fb {
+    background-color: #3B5998;
+    color: white;   
+  }
+#google {
+    background-color: #dd4b39;
+    color: white;
+}
+#fb:hover,
+#google:hover {
+  opacity: 1;
+}
+
+/* Carrito de compras */
+
+#carrito{
+    background-color: #a9abab;
+    border: solid 1px black;
+    height: 90%;
+    max-width: 500px;
+}
+.carrito-header{
+    padding: 5px 10px;
+}
+.cajaProducto{
+    border: solid 1px black;
+    max-width: 90%;
+    max-height: 50%;
+    background-color: #F2DAC4;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajaProducto img {
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-basis: 60%;
+}
+
+.descripcion h4,p{
+    margin: 0;
+}
+.cant{
+    padding: 15px 0;
+}
+
+.eliminar{
+    display: flex;
+    align-items: stretch;
+}
+.eliminar p{
+    padding: 0 5px 0 0;
+}
+.subtotal{
+    padding-bottom: 15px;
+}
+.subtotal h3{
+    text-align: right;
+    margin-right: 9%;
+}
+.subtotal p{
+    text-align: center;
+    opacity: 0.8;
+}
+.envio{
+    border: solid 1px grey;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+}
+.envio-boton{
+    padding: 10px 5px;
+    font-size: 30px; 
+}
+.envio a{
+    padding: 0 5px;
+}
+.carrito-footer{
+    width: 100%;
+    text-align: center;
+}
+
+.carrito-footer h2{
+    text-align: right;
+    margin-right: 9%;
+}
+
+.carrito-footer button, .carrito-footer a{
+    display: block;
+    width: 80%;
+    margin: 5%;
+    font-size: 30px;
+}
+.correo{
+    font-size:5px;
+}
+.crear button{
+    color:white;
+    background-color:black;
+    border:none;
+    padding-top:8px;
+    padding-left:25px;
+    padding-bottom:8px;
+    padding-right:25px;
+    width:100%;
+    display: inline-block;
+}  
+.contenedor h3 {
+    padding-top:5px; 
+    padding-bottom:5px;
+    text-align: center;
+}
+.contenedor{
+    margin: auto;
+    width: 15%;
+    padding: 15px;
+    border:2px solid #F2DAC4;
+    background-color:#F2DAC4
+}
+/* input[type=text] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #F2DAC4;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #F2DAC4;
+    border-radius: 4px;
+    box-sizing: border-box;
+  } */
+  .tenescuenta{
+      display:inline-block;
+      padding-left:130px;
+      font-size:10px;
+  }

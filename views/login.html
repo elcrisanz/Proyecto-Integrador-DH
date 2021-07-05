@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
+
 <body>
-    <h1>Este es el Login</h1>
+    <form action="/login" method="POST" class="login">
+        <h1>INICIAR SESION </h1>
+        <div class="controlForm">
+            <input type="email" name="email" placeholder="Correo Electronico" style="width: 70%;height: 40px;">
+        </div>
+        <div class="controlForm">
+            <input type="password" name="password" placeholder="Contraseña" style="width: 70%;height: 40px;">
+        </div>
+        <a id="fpassword" href="https:/www.google.com.ar">Olvidaste tu contraseña?</a>
+        <button type="submit" id="inicio">Iniciar Sesion </button>
+        <p id="crearcta">No tenes cuenta? <a href="https:/www.google.com.ar">Crea la tuya!</a></p>
+        <button id="fb" type="submit">Accede con Facebook</button>
+        <br>
+        <button id="google" type="submit">Accede con Google</button>
+    </form>
 </body>
 </html>
