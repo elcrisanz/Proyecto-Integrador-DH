@@ -18,6 +18,10 @@ app.get('/Carrito', (req,res) =>{
   res.sendFile(path.resolve(__dirname, './views/carrito-de-compras.html'));
 });
 
+app.get('/Producto', (req,res) =>{
+  res.sendFile(path.resolve(__dirname, './views/producto.html'));
+});
+
 app.use(express.static(path.resolve(__dirname, './public')));
 app.use(express.static(path.resolve(__dirname, './views')));
 

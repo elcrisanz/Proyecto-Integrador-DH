@@ -1,4 +1,215 @@
 
+/* html  {
+
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+} */
+
+/* ////////////////////////////////////////// */
+/* aca empiezan los stilos del home */
+/* ////////////////////////////////////////// */
+
+.banner {
+    height: 40vh;
+}
+
+.section-about {
+    background-color: #f7f7f7;
+    padding: 25rem 0;
+    height: 5vh;
+}
+
+.row-catalog {
+    transform: translate(0%, -100%);
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto; 
+}
+.row .col-1-of-2 {
+    padding-left: 2.5rem;
+    width: calc((100% - 6rem) / 2); 
+}
+.row .col {
+    padding-left: 2.5rem;
+}
+.row .col-8 {
+    padding-left: 2.5rem;
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem !important; 
+}
+
+.paragraph {
+    font-size: 1.6rem;
+}
+
+.composition {
+    position: relative;
+}
+.composition__photo {
+    width: 50vh;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+}
+.composition__photo--p1 {
+    height: 30vh;
+    width: 50vh;
+}
+.composition__photo--p2 {
+    height: 30vh;
+    width: 50vh;
+}
+.composition__photo--p3 {
+    height: 30vh;
+    width: 50vh;
+}
+.composition__photo--p4 {
+    height: 30vh;
+    width: 50vh;
+}
+.composition__photo__position--p1 {
+    left: 0;
+    top: -2rem;
+}
+.composition__photo__position--p2 {
+    right: 5%;
+    top: 0rem;
+}
+.composition__photo__position--p3 {
+    left: 15%;
+    top: 8rem;
+}
+.composition__photo__position--p4 {
+    left: 30%;
+    top: 3rem;
+}
+.composition__photo:hover {
+    outline: 0.2rem solid #BFA980;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95);
+}
+
+.text-top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-weight: bold;
+    font-size: 3vh;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.composition__photo:hover .text-top-left {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh;
+    transition: 0.3s;
+}
+
+/* ////////////////////////////////////////// */
+/* aca comienzan los estilos de los productos */
+/* ////////////////////////////////////////// */
+
+.section-product {
+    background-color: #f7f7f7;
+    padding-top: 1rem;
+}
+
+.section-product-left-side {
+    display: inline;
+    border-right: solid #6c757d 1px;
+}
+
+.section-product-right-side {
+    padding-top: 1.5rem;
+    top: 0;
+    position: sticky;
+    height: 100vh;
+}
+
+.product-principal-img {
+    text-align: center;
+}
+
+.principal-photo {
+    width: 95%; 
+    height: 90vh;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.product-secondary-imgs {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+}
+
+.secondary-photo {
+    width: 29vh;
+    height: 20vh;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+}
+
+.price {
+    font-weight: bold;
+    font-size: large;
+}
+
+.title-otras-personas {
+    padding-left: 2rem;
+}
+
+.breadcrum {
+    font-size: 0.7rem;
+}
+
+.amount-input {
+    width: 50px;
+    border-color: #6c757d;
+    border-width: 1px;
+}
+
+.postal-code-input {
+    width: 120px;
+    border-color: #6c757d;
+    border-width: 1px;
+}
+
+.postal-code-ancor {
+    color: black;
+    text-decoration: none;
+}
+
+.product-button-section {
+    text-align: center;
+}
+
+.product-button {
+    border-radius: 100px !important;
+    border: 2px solid !important;
+    width: 160px !important;
+}
+
 /* ESTILOS GENERALES */
 *{
     box-sizing: border-box;
