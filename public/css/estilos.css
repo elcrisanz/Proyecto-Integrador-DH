@@ -1,10 +1,5 @@
 
 /* html  {
-
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
 } */
 
@@ -296,8 +291,8 @@
 }
 
 a{
-    text-decoration: none;
-    color: #000000;
+    text-decoration: none !important;
+    color: #000000 !important;
 }
 .burger-icon{
     background-color: #000000;
