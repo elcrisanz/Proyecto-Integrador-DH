@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            rel="stylesheet"/>
     <link href="css/estilos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Registro</title>
 </head>
 <body>
-    <h1>Este es el registro de usuarios</h1>
+    <div class="contenedor">
+        <!--<i class="far fa-times-circle"></i>!-->
+    <h3>Crea tu cuenta</h3>
+    <form action="/registro" method="POST">
+        
+        <div class="nombre">
+            <label for="Nombre:"></label>
+            <input type="text" name="Nombre" placeholder="Nombre:"></input>
+        </div>
+        <div>
+            <label for="Apellido"></label>
+            <input type="text" name="Apellido"placeholder="Apellido:"></input>
+        </div> 
+        <div>
+            <label for="Contraseña"></label>
+            <input type="text" name="Contraseña"placeholder="Contraseña:"></input>
+        </div>
+        <div>
+            <label for="Confirma"></label>
+            <input type="text" name="Confirma"placeholder="Confirmar contraseña:"></input>
+        </div>
+        <div>
+            <label for="Correo electronico"></label>
+            <input type="email" name="emailUsuario" placeholder="Correo electrónico"></input>
+        </div>
+        <div>
+            <label for="Confirma correo"></label>
+            <input type="email" name="confirma correo" placeholder="Confirma correo electrónico:"></input>
+        </div>
+        <br>
+        <div class="crear">
+            <button type="submit">Crear cuenta</button>
+        </div>
+        <div class="tenescuenta">
+        <p>Ya tenés cuenta?  <a href="/Login">Iniciá sesión acá</a></p>
+        </div>
+    </form>
+    </section>
 </body>
 </html>
