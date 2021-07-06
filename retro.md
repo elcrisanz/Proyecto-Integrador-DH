@@ -19,14 +19,16 @@
     * _Tenemos muchas ideas y herramientas para aplicar. Pienso que el orden es esencial._
 
 * **Nestor Miguens:**
-    * _Me senti muy bien, ya que las personas que conforman el grupo tienen mucha predisposicion .
-    * _Resaltaria como fundamental el trabajo en equipo.
-    * _No veo por ahora algo para mejorar o cambiar.
+    * _Me senti muy bien, ya que las personas que conforman el grupo tienen mucha predisposicion._
+    * _Resaltaria como fundamental el trabajo en equipo._
+    * _No veo por ahora algo para mejorar o cambiar._
 
 * **Cristian Sánchez:**
-    * _Creo que fue un muy buen Sprint. Enseguida pudimos organizarnos con el equipo, entendiendo cada uno su rol y desde dónde puede aportar más.
-    * _La velocidad con la que nos organizamos y nos pusimos en acción.
-    * _Fue un Sprint corto como para encontrar cosas a cambiar. Creo que vamos por muy buen camino.
+    * _Creo que fue un muy buen Sprint. Enseguida pudimos organizarnos con el equipo, entendiendo cada uno su rol y desde dónde puede aportar más._
+    * _La velocidad con la que nos organizamos y nos pusimos en acción._
+    * _Fue un Sprint corto como para encontrar cosas a cambiar. Creo que vamos por muy buen camino._
 
 ## Conclusión:
 _En base a nuestras respuestas poner aqui alguna conclusion motivacional en conjunto_
+_El camino que tomamos desde un comienzo viene dando excelentes resultados. La organización y el compromiso continuará siendo clave para mantener lo conseguido hasta ahora. La decisión de diseñar mobile last tal vez no haya sido lo óptimo, por lo que deberemos estar atentos a ello.
+Vamos por más!_
