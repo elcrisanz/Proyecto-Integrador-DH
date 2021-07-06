@@ -29,6 +29,5 @@
     * _Fue un Sprint corto como para encontrar cosas a cambiar. Creo que vamos por muy buen camino._
 
 ## Conclusión:
-_En base a nuestras respuestas poner aqui alguna conclusion motivacional en conjunto_
 _El camino que tomamos desde un comienzo viene dando excelentes resultados. La organización y el compromiso continuará siendo clave para mantener lo conseguido hasta ahora. La decisión de diseñar mobile last tal vez no haya sido lo óptimo, por lo que deberemos estar atentos a ello.
 Vamos por más!_
