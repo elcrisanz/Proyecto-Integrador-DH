@@ -31,9 +31,30 @@
         <div class="burger-menu">
             <i class="fas fa-bars burger-icon"></i>
         </div>
+        <div>
+            <ul class="nav-right-mobile">
+                <li><a href="/Login"><i class="fas fa-user-circle fa-1x login-icon"></i></li>
+                <li><a href="/Carrito"><i class="fas fa-shopping-cart fa-1x chart-icon"></i></li>
+            </ul>
+        </div>
         <nav class="main-header-bottom-bar">
             <ul class="nav-left">
-                <li><a href="#">Productos</i></a><i class="fas fa-chevron-down down-arrow"></i></li>
+                <li><a href="#">Productos</i></a>
+                    <i class="fas fa-chevron-down down-arrow"></i>
+                    <div class="ver">
+                        <ul class="header-drop-down">
+                            <li><a href="#">Aros</a></li>
+                            <li><a href="#">Anillos y midis</a></li>
+                            <li><a href="#">Cadenas y Dijes</a></li>
+                            <li><a href="#">Pulseras</a></li>
+                            <li><a href="#">Tobilleras</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                            <li><a href="#">Ruanas y pañuelos</a></li>
+                            <li><a href="#">Ellos</a></li>
+                            <li><a href="#">Outlet</a></li>
+                        </ul>
+                    </div>  
+                </li>
                 <li><a href="#">Promociones</a></li>
                 <li><a href="#">Sobre Nosotras</a></li>
                 <li><a href="#">Outlet</a></li>
@@ -41,6 +62,7 @@
             </ul>
         </nav>
     </header>
+
     
     <section class="section-product">
         <div class="row">
@@ -105,8 +127,8 @@
     <footer class="main-footer">
         <div class="main-footer-left-box">
             <div class="footer-box">
-                <h3 class="footer-titles">Productos</h3>
-                <ul class="footer-list">
+                <a href="#"><h3 class="footer-titles">Productos</h3></a>
+                <ul id="footer-product"class="footer-list no-mobile-list">
                     <li><a href="#">Aros</a></li>
                     <li><a href="#">Anillos y midis</a></li>
                     <li><a href="#">Cadenas y Dijes</a></li>
@@ -119,8 +141,8 @@
                 </ul>
             </div>
             <div class="footer-box">
-                <h3 class="footer-titles">Mi cuenta</h3>
-                <ul class="footer-list">
+                <a href="#"><h3 class="footer-titles">Mi cuenta</h3></a>
+                <ul class="footer-list no-mobile-list">
                     <li><a href="#">Datos personales</a></li>
                     <li><a href="#">Seguimiento de envío</a></li>
                     <li><a href="#">Pedidos</a></li>
@@ -129,8 +151,8 @@
                 </ul>
             </div>
             <div class="footer-box">
-                <h3 class="footer-titles">Mirá También</h3>
-                <ul class="footer-list">
+                <a href="#"><h3 class="footer-titles">Mirá También</h3></a>
+                <ul class="footer-list no-mobile-list">
                     <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#">¿Cómo saber el talle de mi anillo?</a></li>
                     <li><a href="#">Términos y Condiciones</a></li>
@@ -142,7 +164,7 @@
         </div>    
         <div class="main-footer-right-box">
             <div class="footer-box">
-                <ul class="footer-list" >
+                <ul class="footer-list icons-box" >
                     <a href="http://surl.li/yqtg"target="_blank"><i class="fas fa-map-marker-alt location-icon"></i><li>Cochabamba 1282 - Córdoba - Argentina</li></a>
                     <a href="https://api.whatsapp.com/send?phone=5493512011166"target="_blank"><i class="fab fa-whatsapp wtsp-icon"></i><li>+5493512011166</li></a>
                     <a href="https://www.instagram.com/rukha.accesorios/"target="_blank"><i class="fab fa-instagram insta-icon"></i><li>rukha.accesorios</li></a>
@@ -152,6 +174,6 @@
             </div>
         </div>
     </footer>
-
+    
 </body>
 </html>

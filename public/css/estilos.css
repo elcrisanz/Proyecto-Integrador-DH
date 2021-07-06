@@ -276,11 +276,13 @@
     display: none;
 }
 
+
 /* Nav inferior */
 
 .nav-left li {
     padding: 0px 18px 12px;
     font-size: larger;
+    position: relative;
 }
 .nav-right li{
     padding: 12px;
@@ -303,15 +305,28 @@
     right: 18px;
     top: 10px;
 }
+.ver{
+    z-index: 800;
+    position: absolute;
+    background-color: #F2DAC4;
+    left: -4px;
+    opacity: 85%;
+    border-radius: 7%;
+}
 .header-drop-down li{
     line-height: 0.8rem;
+    padding-left: 40px;
+    position: relative;
+    top: -18px;
+    font-weight: bold;
+
 }
 .nav-left li:hover ul{
     display: inline;
 }
-.nav-left li:hover i{
+/* .nav-left li:hover i{
     display: none;
-}
+} */
 a{
     text-decoration: none !important;
     color: #000000 !important;
@@ -378,7 +393,7 @@ a{
 .insta-icon{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .fcbk-icon{
@@ -386,79 +401,6 @@ a{
 }
 .mail-icon{
     color: #C92C19;
-}
-
-@media screen and (max-width: 415px){
-    .main-header-top-bar li{
-        display: none;
-    }
-    .main-header-top-bar{
-        height: 110px;
-    }
-    .logo{
-        max-width: 70%;
-        max-height: 70%;
-    }
-    .nav-right-mobile{
-        display: flex;
-        z-index: 200;
-        list-style: none;
-        position: relative;
-        margin: 0;
-    }
-    .login-icon, .chart-icon{
-        position: absolute;
-        left: 21rem;
-        top: -25px;
-        font-size: 1.3rem;
-        padding-bottom: 0;
-    }
-    .login-icon{
-        left: 19rem;
-    }
-    .main-header-bottom-bar{
-        display: none;
-    }
-    .search-bar-box{
-        flex-direction: column;
-        padding-top: 20px;
-      
-    }
-    .search-bar-btn{
-        right: 0px;
-        top: -45px;
-        left: 78px;
-    }
-    .search-bar{
-        font-size: 12px;
-    }
-    .burger-icon{
-        display: inline-block;
-        position: absolute;
-        top: -33px;
-        left: -120px;
-    }
-    .burger-menu{
-        display: flex;
-        position: relative;
-    }
-    .main-footer{
-        flex-direction: column;
-    }
-    .main-footer-right-box li{
-        display: none;
-    }
-    .main-footer-right-box{
-        display: flex;
-        justify-content: space-between;
-        top: -30px;
-        left: 8vh;
-    }
-    .main-footer-right-box i{
-        font-size: xx-large;
-        padding: 6px;
-    }     
-
 }
 
 /* /////////////////////////// */
@@ -675,3 +617,102 @@ a{
       padding-left:130px;
       font-size:10px;
   }
+
+/* /////////////////////////////// */
+/* ///////MEDIA QUERIES/////////// */
+/* /////////////////////////////// */
+
+@media screen and (max-width: 415px){
+    .main-header-top-bar li{
+        display: none;
+    }
+    .main-header-top-bar{
+        height: 110px;
+    }
+    .logo{
+        max-width: 70%;
+        max-height: 70%;
+    }
+    .nav-right-mobile{
+        display: flex;
+        z-index: 200;
+        list-style: none;
+        position: relative;
+        margin: 0;
+    }
+    .login-icon, .chart-icon{
+        position: absolute;
+        left: 90vw;
+        top: -4vh;
+        font-size: 1.3rem;
+        padding-bottom: 0;
+    }
+    .login-icon{
+        left: 45vh !important;
+    }
+    .main-header-bottom-bar{
+        display: none;
+    }
+    .search-bar-box{
+        flex-direction: column;
+        padding-top: 20px;
+      
+    }
+    .search-bar-btn{
+        right: 0px;
+        top: -45px;
+        left: 78px;
+    }
+    .search-bar{
+        font-size: 12px;
+    }
+    .burger-icon{
+        display: inline-block;
+        position: absolute;
+        top: -33px;
+        left: -120px;
+    }
+    .burger-menu{
+        display: flex;
+        position: relative;
+    }
+    /* FOOTER EN MEDIA Q */
+
+    .main-footer{
+        flex-direction: column;      
+        align-items: center;
+        padding-right: 2rem;
+    }
+    .main-footer-right-box li{
+        display: none;
+    }
+    .main-footer-right-box{
+        display: flex;
+        justify-content: space-between;
+        top: -3rem;
+        left: 8vh;
+    }
+    .no-mobile-list{
+        display: none;
+    }
+    .main-footer-right-box i {
+        font-size: xx-large;
+        padding: 10px 4px 0px;
+    }
+    .main-footer-left-box {
+        flex-direction: column;
+        text-transform: uppercase;
+    }
+    .footer-titles{
+        padding: 10px 10px 10px;
+        text-align: center;
+        background-color: #000000;
+        color: #F2DAC4;
+        border-radius: 8%;
+    }
+    .icons-box{
+        margin-top: 30px;
+    }
+   
+
+}
