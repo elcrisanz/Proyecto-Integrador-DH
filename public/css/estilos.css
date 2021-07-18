@@ -621,7 +621,9 @@ a{
 }
 .contenedor{
     margin: auto;
-    width: 20%;
+    margin-top:50px;
+    margin-bottom:50px;
+    width: 30%;
     padding: 15px;
     border:2px solid #F2DAC4;
     background-color:#F2DAC4

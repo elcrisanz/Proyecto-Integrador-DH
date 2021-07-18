@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="css/estilos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Editar</title>
+  <%- include('partials/head') %>
+  <title>Home</title>
 </head>
 <body>
+<!-- Header -->
+<%- include('partials/header') %> 
+<!-- Main -->
     <div class="contenedor">
         <!--<i class="far fa-times-circle"></i>!-->
-        <h3>Agregar Producto</h3>
+        <h3>Editar Producto</h3>
         <form action="/registro" method="POST">
         
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre"></input>
+                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" value="Argolla c/ Hoja Raya 1,1 CM"></input>
                 <label for="registroNombre">Nombre:</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroPrecio" placeholder="Precio"></input>
+                <input type="number" class="form-control" id="registroPrecio" placeholder="Precio" value="900$"></input>
                 <label for="registroPrecio">Precio:</label>
             </div> 
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroMedida" placeholder="Medida"></input>
+                <input type="text" class="form-control" id="registroMedida" placeholder="Medida" value="s"></input>
                 <label for="registroMedida">Medida:</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroStock" placeholder="Stock"></input>
+                <input type="number" class="form-control" id="registroStock" placeholder="Stock" value= "99"></input>
                 <label for="registroStock">Stock:</label>
             </div>
             <div class="dropdown">
@@ -56,12 +53,14 @@
             </div>
             <br>
             <div class="enviar">
-                <button type="submit">Borrar Datos</button>
+                <button type="reset">Borrar Datos</button>
             </div>
         </form>
         <!-- <div>
             <p class="tenescuenta">Ya tenés cuenta?  <a href="/Login">Iniciá sesión acá</a></p>
         </div> -->
     </div>
+<!-- Footer -->
+<%- include('partials/footer') %>     
 </body>
 </html>

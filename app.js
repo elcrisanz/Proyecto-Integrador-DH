@@ -3,32 +3,34 @@ const app = express()
 const path = require('path');
 
 app.get('/', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/index.html'));
+  res.render(path.resolve(__dirname, './views/index.ejs'));
 });
 
 app.get('/Login', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/login.html'));
+  res.render(path.resolve(__dirname, './views/login.ejs'));
 });
 
 app.get('/Registro', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/registro.html'));
+  res.render(path.resolve(__dirname, './views/registro.ejs'));
 });
 
 app.get('/Carrito', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/carrito-de-compras.html'));
+  res.render(path.resolve(__dirname, './views/carrito-de-compras.ejs'));
 });
 
 app.get('/Producto', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/producto.html'));
+  res.render(path.resolve(__dirname, './views/producto.ejs'));
 });
 
 app.get('/Editar', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/editar-producto.html'));
+  res.render(path.resolve(__dirname, './views/editar-producto.ejs'));
 });
 
 app.get('/Agregar', (req,res) =>{
-  res.sendFile(path.resolve(__dirname, './views/agregar-producto.html'));
+  res.render(path.resolve(__dirname, './views/agregar-producto.ejs'));
 });
+
+app.set('view engine', 'ejs');
 
 app.use(express.static(path.resolve(__dirname, './public')));
 app.use(express.static(path.resolve(__dirname, './views')));

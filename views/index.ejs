@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+  <title>Home</title>
+</head>
+<body>
+<!-- Header -->
+<%- include('partials/header') %> 
+<!-- Main -->
+  <section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner banner">
+        <div class="carousel-item active">
+          <img src="/img/1366_521.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/wallpaper-engine.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/wallpaper_162070056595623a083bab267f63254261f1f938e4.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </section>
+
+  <section class="section-about">
+    <div class="row row-catalog">
+      <div class="col">
+        <h3 class="heading-tertiary u-margin-bottom-small">SOMOS RUKHA</h3>
+          <p class="paragraph">
+            En Rukha encontras  los accesorios de PLATA 925 más lindos para complementar tu look, y a demás los recibís en tu casa con un solo Click.  Envíos a domicilio todos los días, a todos el país.
+          </p>
+      </div>
+      <div class="col-8">
+        <div class="composition">
+          <div class="composition__photo composition__photo__position--p1">
+            <img src="/img/producto-anillos.jpg" alt="Photo 1" class="composition__photo--p1">
+            <span class="text-top-left">Anillos</span>
+          </div>
+          <div class="composition__photo composition__photo__position--p3">                
+            <img src="/img/producto-collares.jpg" alt="Photo 3" class="composition__photo--p3">
+            <span class="text-top-left">Collares</span>
+          </div>
+          <div class="composition__photo composition__photo__position--p4">                
+            <img src="/img/producto-aros.jpg" alt="Photo 4" class="composition__photo--p4">
+            <span class="text-top-left">Aros</span>
+          </div>
+          <div class="composition__photo composition__photo__position--p2">                
+            <img src="/img/producto-aritos.jpg" alt="Photo 2" class="composition__photo--p2">
+            <span class="text-top-left">Aritos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <%- include('partials/footer') %>     
+</body>
+</html>
