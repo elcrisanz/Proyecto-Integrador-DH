@@ -22,6 +22,14 @@ app.get('/Producto', (req,res) =>{
   res.sendFile(path.resolve(__dirname, './views/producto.html'));
 });
 
+app.get('/Editar', (req,res) =>{
+  res.sendFile(path.resolve(__dirname, './views/editar-producto.html'));
+});
+
+app.get('/Agregar', (req,res) =>{
+  res.sendFile(path.resolve(__dirname, './views/agregar-producto.html'));
+});
+
 app.use(express.static(path.resolve(__dirname, './public')));
 app.use(express.static(path.resolve(__dirname, './views')));
 

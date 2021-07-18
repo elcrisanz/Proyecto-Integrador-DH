@@ -245,7 +245,7 @@ html  {
     width: 46px;
     border: 0 rgba(0,0,0,.2);
     background-color: #fff;
-    height: 39px;
+    height: 35px;
     z-index: 1;
     right: 55px;
     margin: auto;
@@ -253,6 +253,7 @@ html  {
 }
 .search-icon{
     font-size: x-large;
+    float: right;
 }
 .login-icon, .chart-icon, .fav-icon{
     padding-bottom: 7px;
@@ -621,6 +622,67 @@ a{
     margin: 0 auto;
     float: none;
   }
+  
+/*///////////////////////////////////////*/
+/*////aca empieza EDITAR PRODUCTO ///////*/
+/*//////////////////////////////////////*/
+
+.dropbtn {
+    background-color:white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom:15px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  .dropdown:hover .dropbtn {
+      background-color: #3b3b3b;
+      color:white
+    }
+    .enviar button{
+        color:white;
+        background-color:#3b3b3b;
+        border-radius: 4px;
+        border:none;
+        padding-top:8px;
+        padding-left:25px;
+        padding-bottom:8px;
+        padding-right:25px;
+        width:100%;
+        display: inline-block;
+        margin-top:30px 0;
+    }
+    .archivo{
+        font-size: 14px;
+        margin-top:5px 0;
+    }
+  
 
 /* /////////////////////////////// */
 /* ///////MEDIA QUERIES/////////// */
@@ -717,6 +779,6 @@ a{
     .icons-box{
         margin-top: 30px;
     }
-   
-
 }
+
+
