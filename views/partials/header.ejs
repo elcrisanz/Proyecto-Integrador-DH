@@ -1,13 +1,13 @@
 <header class="main-header">
     <div class="main-header-top-bar">
-        <img src="/img/logo-transparente.png" class="logo">
+        <img src="/img/Logo-transparente.png" class="logo">
         <div class="search-bar-box">
             <input class="search-bar" type="text" placeholder="Buscar productos...">
             <button type="submit" class="search-bar-btn"><i class="fas fa-search search-icon"></i></button>
         </div>
         <ul class="nav-right">
-            <li><a href="/Login" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-user-circle fa-2x login-icon"></i><br>Entrar </a><a id="registrarse" href="/Registro" data-bs-toggle="modal" data-bs-target="#registroModal">|  Registrarse</a></li>
-            <li><a href="/Carrito"><i class="fas fa-shopping-cart fa-2x chart-icon"></i><br> Ir al Carrito</a></li>
+            <li><a href="/login" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-user-circle fa-2x login-icon"></i><br>Entrar </a><a id="registrarse" href="/Registro" data-bs-toggle="modal" data-bs-target="#registroModal">|  Registrarse</a></li>
+            <li><a href="/carrito"><i class="fas fa-shopping-cart fa-2x chart-icon"></i><br> Ir al Carrito</a></li>
             <li><a href=""><i class="fas fa-heart fa-2x fav-icon"></i><br> Favoritos</a></li>
         </ul>
     </div>
@@ -16,8 +16,8 @@
     </div>
     <div>
         <ul class="nav-right-mobile">
-            <li><a href="/Login" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-user-circle fa-1x login-icon"></i></li>
-            <li><a href="/Carrito" data-bs-toggle="modal" data-bs-target="#registroModal"><i class="fas fa-shopping-cart fa-1x chart-icon"></i></li>
+            <li><a href="/login" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fas fa-user-circle fa-1x login-icon"></i></li>
+            <li><a href="/carrito" data-bs-toggle="modal" data-bs-target="#registroModal"><i class="fas fa-shopping-cart fa-1x chart-icon"></i></li>
         </ul>
     </div>
     <nav class="main-header-bottom-bar">
@@ -59,7 +59,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div> -->
               <div class="modal-body">
-                 aca va el html del login o registro
+                 <%- include ("../users/login") %>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -85,7 +85,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div> -->
               <div class="modal-body">
-                 aca va el html del login o registro
+                <%- include ("../users/registro") %>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

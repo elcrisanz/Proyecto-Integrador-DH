@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include('partials/head') %>
+  <%- include('../partials/head') %>
   <title>Home</title>
 </head>
 <body>
 <!-- Header -->
-<%- include('partials/header') %> 
+<%- include('../partials/header') %> 
 <!-- Main -->
     <div class="contenedor">
         <!--<i class="far fa-times-circle"></i>!-->
-        <h3>Editar Producto</h3>
+        <h3>Agregar Producto</h3>
         <form action="/registro" method="POST">
         
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" value="Argolla c/ Hoja Raya 1,1 CM"></input>
+                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre"></input>
                 <label for="registroNombre">Nombre:</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroPrecio" placeholder="Precio" value="900$"></input>
+                <input type="number" class="form-control" id="registroPrecio" placeholder="Precio"></input>
                 <label for="registroPrecio">Precio:</label>
             </div> 
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroMedida" placeholder="Medida" value="s"></input>
+                <input type="text" class="form-control" id="registroMedida" placeholder="Medida"></input>
                 <label for="registroMedida">Medida:</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroStock" placeholder="Stock" value= "99"></input>
+                <input type="number" class="form-control" id="registroStock" placeholder="Stock"></input>
                 <label for="registroStock">Stock:</label>
             </div>
             <div class="dropdown">
@@ -61,6 +61,6 @@
         </div> -->
     </div>
 <!-- Footer -->
-<%- include('partials/footer') %>     
+<%- include('../partials/footer') %>     
 </body>
 </html>
