@@ -13,12 +13,15 @@ html  {
 
 .section-about {
     background-color: #f7f7f7;
-    padding: 25rem 0;
-    height: 5vh;
+    /* padding: 25rem 0; */
+    /* height: 5vh; */
+    padding-top: 10rem;
+    height: 40rem;
+    /* padding-bottom: 10rem; */
 }
 
 .row-catalog {
-    transform: translate(0%, -100%);
+    /* transform: translate(0%, -100%); */
 }
 
 .row {
@@ -60,6 +63,7 @@ html  {
     position: absolute;
     z-index: 10;
     transition: all .2s;
+    background: #000000;
 }
 .composition__photo--p1 {
     height: 30vh;
@@ -94,30 +98,47 @@ html  {
     top: 3rem;
 }
 .composition__photo:hover {
-    outline: 0.2rem solid #BFA980;
+    /* outline: 0.2rem solid #BFA980; */
+    outline: 0.4rem solid #f2dac4;
     transform: scale(1.05) translateY(-0.5rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
     z-index: 20;
+}
+
+.composition__photo:hover img {
+    opacity: .4;
+    transition: .3s;
 }
 .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95);
 }
 
 .text-top-left {
-    position: absolute;
+    /* position: absolute;
     top: 8px;
     left: 16px;
     font-weight: bold;
     font-size: 3vh;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-}
-
-.composition__photo:hover .text-top-left {
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vh;
-    transition: 0.3s;
+    /* display: none; */
+    visibility: hidden;
+    position: absolute;
+    color: white;
+}
+
+.composition__photo:hover .text-top-left {
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vh; */
+    /* transition: 0.3s; */
+    visibility: visible;
+    /* display: block; */
+    /* transition: 9s !important; */
 }
 
 /* ////////////////////////////////////////// */
@@ -397,6 +418,19 @@ a{
 }
 .mail-icon{
     color: #C92C19;
+}
+
+/* .modal-content {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+} */
+
+/* .modal-backdrop.show
+{
+    display: none !important;
+} */
+
+.modal-open {
+    padding-right: 0px !important;
 }
 
 /* /////////////////////////// */
@@ -688,6 +722,8 @@ a{
 /* ///////MEDIA QUERIES/////////// */
 /* /////////////////////////////// */
 
+
+/* ////////// Mobile ///////////// */
 @media screen and (max-width: 415px){
     .main-header-top-bar li{
         display: none;
@@ -779,6 +815,95 @@ a{
     .icons-box{
         margin-top: 30px;
     }
+
+    .carousel {
+        height: auto;
+    }
+
+    .section-about {
+        height: 100%;
+        padding-top: 5rem;
+    }
+
+    .section-about .row {
+        display: block;
+    }
+   
+    .section-about .col{
+        padding-right: 1rem;
+        display: block;
+    }
+
+    .composition {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .composition__photo__position--p1, .composition__photo__position--p2, .composition__photo__position--p3, .composition__photo__position--p4 {
+        display: block;
+        position:unset;
+        /* left: 0;
+        top: 0; */
+        margin-bottom: 20px;
+    }
+
+    .composition__photo:hover {
+        outline: 0.4rem solid #f2dac4;
+        transform: scale(1) translateY(0rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    }
+    
+    .composition:hover .composition__photo:not(:hover) {
+        transform: scale(1);
+    }
+
 }
 
 
+/* ////////// Tablet ///////////// */
+@media screen and (max-width: 768px){
+    .carousel {
+        height: auto;
+    }
+
+    .section-about {
+        height: 100%;
+        padding-top: 5rem;
+    }
+
+    .section-about .row {
+        display: block;
+    }
+   
+    .section-about .col{
+        padding-right: 1rem;
+        display: block;
+    }
+
+    .composition {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90vw;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .composition__photo__position--p1, .composition__photo__position--p2, .composition__photo__position--p3, .composition__photo__position--p4 {
+        display: inline;
+        position:unset;
+        /* left: 0;
+        top: 0; */
+        margin-bottom: 20px;
+    }
+
+    .composition__photo:hover {
+        outline: 0.4rem solid #f2dac4;
+        transform: scale(1) translateY(0rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    }
+    
+    .composition:hover .composition__photo:not(:hover) {
+        transform: scale(1);
+    }
+}
