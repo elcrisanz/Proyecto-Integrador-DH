@@ -48,3 +48,8 @@ Vamos por más!_
     * _Fue un Sprint un poco más pesado que el anterior, sin embargo pudimos sacarlo adelante manteniendo la organización y el compromiso. Estoy muy contento con el resultado obtenido._
     * _La simpleza con la que resolvimos temas que parecían complicados y el resultado obtenido._
     * _Si bien cumplimos con lo planteado, todavía falta encontrar espacios para refinar detalles y agregar funcionalidad a toda la página._
+  
+* **Matias Sanchez:**
+    * _Me senti conforme con lo realizado, ya que coincidimos plenamente con las opiniones de cada uno, haciendo agil la concrecion de las consignas._
+    * _La facilidad en ponernos de acuerdo._
+    * _Podriamos extremar un poco mas el control del resultado entregable._
