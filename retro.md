@@ -55,6 +55,11 @@ Vamos por más!_
     * _Podriamos extremar un poco mas el control del resultado entregable._
   
 * **Nestor Miguens:**
-    * _Muy satisfecho con el resultado final.
+    * _Muy satisfecho con el resultado final._
     * _La predisposicion de mis compañeros para resolver todas las consignas del sprint._
     * _Mas tiempo ya que este sprint fue muy proximo al trabajo individual 2._
+  
+* **Emilio Alposta:**
+    * _Se hizo un muy buen trabajo, por mas que tambien estabamos cada uno con el tp individual, cada uno se pudo comprometer y hacer su parte, aunque fue un poco cargado el tener las dos cosas en simultaneo pudimos salir para adelante, tal vez no llegamos con todo lo que planeabamos pero estamos bien encaminados._
+    * _La buena distribucion de las tareas y el compromiso de cada uno para cumplir con su parte._
+    * _No llegamos a cumplir con todo lo que nos planteamos, pero mas que anda porque tambien estabamos con el tp individual. Se pudo haber pulido mas el tema de estilos del producto entregado y cumplir con la responsividad de la pagina por falta de tiempo._
