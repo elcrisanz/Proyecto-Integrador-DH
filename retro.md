@@ -1,5 +1,7 @@
 # Retrospectiva
 
+## SPRINT 2
+
 ## Preguntas:
 
 * ¿Cómo te sentís con lo que se hizo en este sprint que paso?
@@ -31,3 +33,18 @@
 ## Conclusión:
 _El camino que tomamos desde un comienzo viene dando excelentes resultados. La organización y el compromiso continuará siendo clave para mantener lo conseguido hasta ahora. La decisión de diseñar mobile last tal vez no haya sido lo óptimo, por lo que deberemos estar atentos a ello.
 Vamos por más!_
+
+## SPRINT 3
+
+## Preguntas:
+
+* ¿Cómo te sentís con lo que se hizo en este sprint que paso?
+* ¿Qué te gustaría resaltar de lo que más te gusto de este sprint o te gustaría seguir aplicando?
+* ¿Qué sentís que se hizo mal o se podría mejorar o cambiar?
+
+## Respuestas:
+
+* **Cristian Sánchez:**
+    * _Fue un Sprint un poco más pesado que el anterior, sin embargo pudimos sacarlo adelante manteniendo la organización y el compromiso. Estoy muy contento con el resultado obtenido._
+    * _La simpleza con la que resolvimos temas que parecían complicados y el resultado obtenido._
+    * _Si bien cumplimos con lo planteado, todavía falta encontrar espacios para refinar detalles y agregar funcionalidad a toda la página._
