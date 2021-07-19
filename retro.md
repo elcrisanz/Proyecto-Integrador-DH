@@ -57,4 +57,4 @@ Vamos por más!_
 * **Nestor Miguens:**
     * _Muy satisfecho con el resultado final.
     * _La predisposicion de mis compañeros para resolver todas las consignas del sprint._
-    * _Mas tiempo ya que este sprint fue muy proximo al trabjo individual 2._
+    * _Mas tiempo ya que este sprint fue muy proximo al trabajo individual 2._
