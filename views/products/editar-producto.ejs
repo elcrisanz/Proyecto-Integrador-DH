@@ -8,10 +8,11 @@
 <!-- Header -->
 <%- include('../partials/header') %> 
 <!-- Main -->
-    <div class="contenedor">
+    <div class="product-form-box" >
+
         <!--<i class="far fa-times-circle"></i>!-->
         <h3>Editar Producto</h3>
-        <form action="/registro" method="POST">
+        <form action="#" method="POST" class="product-form">
         
             <div class="form-floating mb-2">
                 <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" value="Argolla c/ Hoja Raya 1,1 CM"></input>
@@ -30,7 +31,7 @@
                 <label for="registroStock">Stock:</label>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Tipo Producto</button>
+                <button class="dropbtn" type="button">Tipo Producto</button>
                 <div class="dropdown-content">
                       <a href="#">Aros</a>
                       <a href="#">Anillos y Midis</a>
