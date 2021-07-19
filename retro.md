@@ -53,3 +53,8 @@ Vamos por más!_
     * _Me senti conforme con lo realizado, ya que coincidimos plenamente con las opiniones de cada uno, haciendo agil la concrecion de las consignas._
     * _La facilidad en ponernos de acuerdo._
     * _Podriamos extremar un poco mas el control del resultado entregable._
+  
+* **Nestor Miguens:**
+    * _Fue satisfecho con el resultado final.
+    * _La predisposicion de mis compañeros para resolver todas las consignas del sprint._
+    * _Mas tiempo ya que este sprint fue muy proximo al trabjo individual 2._
