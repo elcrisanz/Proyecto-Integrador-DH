@@ -1,20 +1,11 @@
+const fs = require('fs');
+const path = require('path');
+
+const productsFilePath = path.join(__dirname, './../data/productsDB.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 const controlador = {
-    index: (req,res) =>{
-        res.render('index');
-    },
-    
-    login: (req,res) =>{
-        res.render('./users/login');
-    },
-
-    registro: (req,res) =>{
-        res.render('./users/registro');
-    },
-      
-    carrito: (req,res) =>{
-        res.render('./products/carrito-de-compras');
-    },
-
+   
     agregar: (req,res) =>{
         res.render('./products/agregar-producto');
     },
@@ -23,9 +14,21 @@ const controlador = {
         res.render('./products/editar-producto');
     },
       
-    producto: (req,res) =>{
-        res.render('./products/producto');
-    }
+    detalle: (req,res) =>{
+        let id= req.params.id
+        let productoEncontrado;
+
+        for (let p of products){
+            if ( p.id==id){
+                productoEncontrado = p;
+            }
+        }
+        res.render('./products/producto', {productoDetalle: productoEncontrado});
+    },
+
+    productosTotales: (req,res) =>{
+        res.render('./products/productosTotales', {productos: products});
+    },
 };
 
 module.exports = controlador;

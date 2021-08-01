@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-8 section-product-left-side">
                 <div class="product-principal-img" >
-                    <img src="/img/productos/2000_5f31e6183743c.jpg" alt="" class="principal-photo" >
+                    <img src="/img/productos/<%=productoDetalle.image%>" alt="" class="principal-photo" >
                 </div>
 
                 <br>
@@ -30,9 +30,9 @@
             </div>
             
             <div class="col section-product-right-side">
-                <h3>Argolla c/ Hoja Raya 1,1 CM <i class="far fa-heart"></i> <i class="fas fa-share-alt"></i></h3>
-                <p class="breadcrum">Página de inicio / PRODUCTOS / AROS / ARGOLLAS / ARGOLLA C/ HOJA RAYA 1,1 CM</p>
-                <p class="price">$900</p>
+                <h3><%=productoDetalle.name%> <i class="far fa-heart"></i> <i class="fas fa-share-alt"></i></h3>
+                <p class="breadcrum">Página de inicio / PRODUCTOS / AROS / ARGOLLAS / <%=productoDetalle.name%></p>
+                <p class="price">$ <%=productoDetalle.price%></p>
 
                 <label for="medida">Medida:</label>
                 <select name="medida" id="medida">
