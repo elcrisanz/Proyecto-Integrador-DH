@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-8 section-product-left-side">
                 <div class="product-principal-img" >
-                    <img src="/img/productos/<%=productoDetalle.image%>" alt="" class="principal-photo" >
+                    <img src="/img/<%= productoDetalle.image %>" alt="" class="principal-photo" >
                 </div>
 
                 <br>
@@ -60,15 +60,20 @@
                 <br>
                 <div class="product-button-section">
                     <button class="btn btn-primary product-button" type="button" id="button-addon2">Comprar</button>
-                    <br>
-                    <br>
+                    <!-- <br>
+                    <br> -->
                     <button class="btn btn-outline-primary product-button" type="button" id="button-addon2">Agregar al carrito</button>
+                    <br>
+                    <br>
+                    <button onclick="location.href='../editar/<%=productoDetalle.id%>'" type="button" class="btn btn-warning" >Editar Producto</button>
+                    <button type="button" class="btn btn-outline-danger">Eliminar Producto</button>
+                    <!-- <br>
+                    <br> -->
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
-  <%- include('../partials/footer') %>     
-</body>
-</html>
+    <%- include('../partials/footer') %>     
+  </body>
+  </html>

@@ -7,6 +7,6 @@ router.get('/', productosController.productosTotales);
 
 router.get('/detalle/:id', productosController.detalle);
 router.get('/agregar', productosController.agregar);
-router.get('/editar', productosController.editar);
+router.put('/editar/:id', productosController.editar);
 
 module.exports = router;  

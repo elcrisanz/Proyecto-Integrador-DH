@@ -21,6 +21,7 @@ const controlador = {
         for (let p of products){
             if ( p.id==id){
                 productoEncontrado = p;
+                break;
             }
         }
         res.render('./products/producto', {productoDetalle: productoEncontrado});

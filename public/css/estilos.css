@@ -178,6 +178,7 @@ html  {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1.5rem;
+    padding-bottom: 3rem;
 }
 
 .secondary-photo {
@@ -219,6 +220,9 @@ html  {
     border-radius: 100px !important;
     border: 2px solid !important;
     width: 160px !important;
+}
+.delete-btn :hover{
+    background-color: #C92C19 !important;
 }
 
 /* ESTILOS GENERALES */
