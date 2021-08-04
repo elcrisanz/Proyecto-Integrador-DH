@@ -221,8 +221,8 @@ html  {
     border: 2px solid !important;
     width: 160px !important;
 }
-.delete-btn :hover{
-    background-color: #C92C19 !important;
+#form-delete-btn {
+    padding-top: 1rem;
 }
 
 /* ESTILOS GENERALES */

@@ -1,92 +1,92 @@
 [
-    {
-    "id": 1,
-    "name": "Argolla fina",
-    "retail price":870,
-    "measure": 3.2,
-    "price": 500,
-    "codigo": "SKU 003",
-    "image": "producto-aros.jpg"
-    },
-    {
-    "id": 2,
-    "name": "Angel Mediano",
-    "retail price":990,
-    "measure": 2.6,
-    "price": 790,
-    "codigo": "534",
-    "image": "cadena-con-dije.jpeg"
-    },
-    {
-    "id": 3,
-    "name": "Cuerno",
-    "retail price":720,
-    "measure": 1.7,
-    "price": 530,
-    "codigo": "A198",
-    "image": "productos-anillos.jpg"
-    },
-    {
-    "id": 4,
-    "name": "Clasica Doble Cadena",
-    "retail price":1260,
-    "measure": 18.5,
-    "price": 990,
-    "codigo": "P133",
-    "image": "pulsera.jpeg"
-    },
-    {
-     "id": 5,
-    "name": "Cuadrada Gruesa",
-    "retail price":1060,
-    "measure": 18.5,
-    "price": 800,
-    "codigo": "P002",
-    "image": "pulsera2.jpeg"
-    },
-    {
-     "id": 6,
-    "name": "Verde Militar Lisa",
-    "retail price":3000,
-    "measure": "1.7 x 0.30",
-    "price": 2400,
-    "codigo": "B004",
-    "image": "producto-ruana.jpg"
-    },
-    {
-    "id": 7,
-    "name": "Moño New Animal Lila",
-    "retail price":420,
-    "measure": "150",
-    "price": 310,
-    "codigo": "M003",
-    "image": "producto-accesorio.jpg"
-    },
-    {
-    "id": 8,
-    "name": "Clasica con Estrella Bombe",
-    "retail price":1240,
-    "measure": "24",
-    "price": 930,
-    "codigo": "T011",
-    "image": "producto-tobillera.jpg"
-    },
-    {
-    "id": 9,
-    "name": "Cadena Forcet",
-    "retail price":2530,
-    "measure": 55,
-    "price": 1880,
-    "codigo": "E005",
-    "image": "producto-ellos.jpg"
-    },
-    {
-    "id": 10,
-    "name": "Anillo Romano en Oferta",
-    "retail price":1280,
-    "measure": "1.6/1.7/1.8",
-    "price": 950,
-    "codigo": "A303",
-    "image": "anillo3.jpeg"
-    }
-  ]
+ {
+  "id": 2,
+  "name": "Angel Mediano H",
+  "retail price": 990,
+  "measure": "2.6",
+  "price": "500",
+  "codigo": "534",
+  "image": "cadena-con-dije.jpeg",
+  "stock": 15
+ },
+ {
+  "id": 3,
+  "name": "Cuerno",
+  "retail price": 720,
+  "measure": 1.7,
+  "price": 530,
+  "codigo": "A198",
+  "image": "productos-anillos.jpg",
+  "stock": 99
+ },
+ {
+  "id": 4,
+  "name": "Clasica Doble Cadena",
+  "retail price": 1260,
+  "measure": 18.5,
+  "price": 990,
+  "codigo": "P133",
+  "image": "pulsera.jpeg",
+  "stock": 99
+ },
+ {
+  "id": 5,
+  "name": "Cuadrada Gruesa",
+  "retail price": 1060,
+  "measure": 18.5,
+  "price": 800,
+  "codigo": "P002",
+  "image": "pulsera2.jpeg",
+  "stock": 99
+ },
+ {
+  "id": 6,
+  "name": "Verde Militar Lisa",
+  "retail price": 3000,
+  "measure": "1.7 x 0.30",
+  "price": 2400,
+  "codigo": "B004",
+  "image": "producto-ruana.jpg",
+  "stock": 99
+ },
+ {
+  "id": 7,
+  "name": "Moño New Animal Lila",
+  "retail price": 420,
+  "measure": "150",
+  "price": 310,
+  "codigo": "M003",
+  "image": "producto-accesorio.jpg",
+  "stock": 99
+ },
+ {
+  "id": 8,
+  "name": "Clasica con Estrella Bombe",
+  "retail price": 1240,
+  "measure": "24",
+  "price": 930,
+  "codigo": "T011",
+  "image": "producto-tobillera.jpg",
+  "stock": 99
+ },
+ {
+  "id": 9,
+  "name": "Cadena Forcet",
+  "retail price": 2530,
+  "measure": 55,
+  "price": 1880,
+  "codigo": "E005",
+  "image": "producto-ellos.jpg",
+  "stock": 99
+ },
+ {
+  "id": 10,
+  "name": "Anillo Romano en Oferta",
+  "retail price": 1280,
+  "measure": "1.6/1.7/1.8",
+  "price": 950,
+  "codigo": "A303",
+  "image": "anillo3.jpeg",
+  "stock": 99
+ }
+]

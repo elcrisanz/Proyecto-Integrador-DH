@@ -12,41 +12,41 @@
 
         <!--<i class="far fa-times-circle"></i>!-->
         <h3>Editar Producto</h3>
-        <form action="#" method="POST" class="product-form">
+        <form action="/products/editar/<%=productoAEditar.id%>?_method=PUT" method="POST" class="product-form">
         
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" value="Argolla c/ Hoja Raya 1,1 CM"></input>
+                <input type="text" name= "name" class="form-control" id="registroNombre" placeholder="Nombre" value="<%= productoAEditar.name %>"></input>
                 <label for="registroNombre">Nombre:</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroPrecio" placeholder="Precio" value="900$"></input>
+                <input type="number" name= "price" class="form-control" id="registroPrecio" placeholder="Precio" value="<%= productoAEditar.price %>"></input>
                 <label for="registroPrecio">Precio:</label>
             </div> 
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroMedida" placeholder="Medida" value="s"></input>
+                <input type="text" name= "measure" class="form-control" id="registroMedida" placeholder="Medida" value="<%= productoAEditar.measure %>"></input>
                 <label for="registroMedida">Medida:</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroStock" placeholder="Stock" value= "99"></input>
+                <input type="number" name= "stock" class="form-control" id="registroStock" placeholder="Stock" value= "<%= productoAEditar.stock %>"></input>
                 <label for="registroStock">Stock:</label>
             </div>
             <div class="dropdown">
                 <button class="dropbtn" type="button">Tipo Producto</button>
                 <div class="dropdown-content">
-                      <a href="#">Aros</a>
-                      <a href="#">Anillos y Midis</a>
-                      <a href="#">Cadenas y Dijes</a>
-                      <a href="#">Pulseras</a>
-                      <a href="#">Tobilleras</a>
-                      <a href="#">Accesorios</a>
-                      <a href="#">Ruanas y Pañuelos</a>
-                      <a href="#">Ellos</a>
-                      <a href="#">Oulet</a>
-                    </div>
-                  </div>
+                    <a href="#">Aros</a>
+                    <a href="#">Anillos y Midis</a>
+                    <a href="#">Cadenas y Dijes</a>
+                    <a href="#">Pulseras</a>
+                    <a href="#">Tobilleras</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Ruanas y Pañuelos</a>
+                    <a href="#">Ellos</a>
+                    <a href="#">Oulet</a>
+                </div>
+            </div>
                  
                 <div class="archivo"action="/action_page.php">
-                    <label for="myfile">Foto del Producto:</label>
+                    <label for="myfile">Cambiar foto actual: </label>
                 <input type="file" id="myfile" name="myfile"><br><br>    
                 </div>
             <div class="enviar">
