@@ -65,7 +65,7 @@
                     <button class="btn btn-outline-primary product-button" type="button" id="button-addon2">Agregar al carrito</button>
                     <br>
                     <br>
-                    <button onclick="location.href='../editar/<%=productoDetalle.id%>'" type="button" class="btn btn-warning" >Editar Producto</button>
+                    <button onclick="location.href='../edit/<%=productoDetalle.id%>'" type="button" class="btn btn-warning" >Editar Producto</button>
                     <br>
                     <form action="/products/<%=productoDetalle.id%>?_method=DELETE" method="POST" id= "form-delete-btn" onsubmit="return confirm('¿Desea eliminar el producto <%=productoDetalle.name%>?')">    
                         <button type="submit" class="btn btn-outline-danger">Eliminar Producto</button>

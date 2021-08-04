@@ -5,13 +5,13 @@ const productosController = require ('../controllers/productosController');
 
 router.get('/', productosController.productosTotales);
 
-router.get('/detalle/:id', productosController.detalle);
+router.get('/detail/:id', productosController.detalle);
 
-router.get('/agregar', productosController.agregar);
-router.post('/agregar', productosController.store);
+router.get('/create', productosController.agregar);
+router.post('/create', productosController.store);
 
-router.get('/editar/:id', productosController.editar);
-router.put('/editar/:id', productosController.update);
+router.get('/edit/:id', productosController.editar);
+router.put('/edit/:id', productosController.update);
 
 router.delete('/:id', productosController.destroy)
 

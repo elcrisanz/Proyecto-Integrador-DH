@@ -1,7 +1,7 @@
 [
  {
   "id": 2,
-  "name": "Angel Mediano H",
+  "name": "Angel Mediano",
   "retail price": 990,
   "measure": "2.6",
   "price": "500",
@@ -88,5 +88,13 @@
   "codigo": "A303",
   "image": "anillo3.jpeg",
   "stock": 99
+ },
+ {
+  "id": 1,
+  "name": "la baratija",
+  "price": "55555",
+  "measure": "22",
+  "stock": "20",
+  "img": "pulsera2.jpeg"
  }
 ]

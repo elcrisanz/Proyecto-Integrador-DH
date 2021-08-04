@@ -12,7 +12,7 @@
 
         <!--<i class="far fa-times-circle"></i>!-->
         <h3>Editar Producto</h3>
-        <form action="/products/editar/<%=productoAEditar.id%>?_method=PUT" method="POST" class="product-form">
+        <form action="/products/edit/<%=productoAEditar.id%>?_method=PUT" method="POST" class="product-form">
         
             <div class="form-floating mb-2">
                 <input type="text" name= "name" class="form-control" id="registroNombre" placeholder="Nombre" value="<%= productoAEditar.name %>"></input>
