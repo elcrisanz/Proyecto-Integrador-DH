@@ -11,14 +11,7 @@ const controlador = {
     },
 
     store: (req, res) => {
-        let idNuevo = 0;
-        
-        for (let e of products) {
-            if (idNuevo < products.id) {
-                idNuevo = products.id
-            }
-        }
-        idNuevo++;
+        let idNuevo = products[products.length-1].id + 1;       
 
         let productoNuevo = {
             id: idNuevo,
@@ -26,8 +19,7 @@ const controlador = {
             price: req.body.price,
             measure: req.body.measure,
             stock: req.body.stock,
-            //falta imagen
-            img: "pulsera2.jpeg"
+            image: req.file.filename
         }
 
         products.push(productoNuevo);
@@ -51,7 +43,7 @@ const controlador = {
     },
 
     update: (req, res) => {
-        let id= req.params.id
+        let id = req.params.id
 
         for (let p of products){
             if ( p.id==id){
@@ -59,7 +51,7 @@ const controlador = {
                 p.price = req.body.price;
                 p.measure = req.body.measure;
                 p.stock = parseInt(req.body.stock);
-                // p.image= req.body.image,
+                p.image = req.file.filename;
                 break;
             }
         }
