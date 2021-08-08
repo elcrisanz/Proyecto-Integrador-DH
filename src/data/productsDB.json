@@ -88,51 +88,5 @@
   "codigo": "A303",
   "image": "anillo3.jpeg",
   "stock": 99
- },
- {
-  "id": 11,
-  "name": "test2",
-  "price": "123",
-  "measure": "124124",
-  "stock": "1234",
-  "img": "pulsera2.jpeg"
- },
- {
-  "id": 12,
-  "name": "test3",
-  "price": "12345",
-  "measure": "12234",
-  "stock": "1234",
-  "img": "pulsera2.jpeg"
- },
- {
-  "id": 13,
-  "name": "test8",
-  "price": "324",
-  "measure": "345",
-  "stock": "23456",
-  "img": "pulsera2.jpeg"
- },
- {
-  "id": 14,
-  "name": "AAA",
-  "price": "123",
-  "measure": "123",
-  "stock": "123"
- },
- {
-  "id": 15,
-  "name": "BBB",
-  "price": "1234",
-  "measure": "1234",
-  "stock": "1234"
- },
- {
-  "id": 16,
-  "name": "CCC",
-  "price": "1234",
-  "measure": "1234",
-  "stock": "1244",
-  "img": "pulsera2.jpeg"
  }
 ]

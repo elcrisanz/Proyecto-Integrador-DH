@@ -26,9 +26,10 @@ const controlador = {
             price: req.body.price,
             measure: req.body.measure,
             stock: req.body.stock,
-            //falta imagen
-            img: "pulsera2.jpeg"
+            img: req.body.myfile
         }
+
+        // console.log(req)
 
         products.push(productoNuevo);
 
