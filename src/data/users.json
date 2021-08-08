@@ -1,0 +1,30 @@
+[
+    {
+    "id": 1,
+    "name": "Carlos",
+    "last name":"Ruiz Diaz",
+    "password": "xxxxxxx",
+    "email":"cruizdiaz@gmail.com" 
+    },
+    {
+    "id": 2,
+    "name": "Mateo",
+    "last name":"Rodriguez",
+    "password": "ccbcbbbcb",
+    "email":"mateoRo@hotmail.com"
+    },
+    {
+    "id":3,
+    "name": "Braian",
+    "last name":"Fernandez",
+    "password": "rererere",
+    "email":"braian73@hotmail.com"
+    },
+    {
+    "id": 4,
+    "name": "Sergio",
+    "last name":"Ledezma",
+    "password": "gsgsgsgsgs",
+    "email":"sledezma@gmail.com"
+}   
+]
