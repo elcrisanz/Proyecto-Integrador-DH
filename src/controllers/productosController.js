@@ -14,8 +14,8 @@ const controlador = {
         let idNuevo = 0;
         
         for (let e of products) {
-            if (idNuevo < products.id) {
-                idNuevo = products.id
+            if (idNuevo < e.id) {
+                idNuevo = e.id;
             }
         }
         idNuevo++;
