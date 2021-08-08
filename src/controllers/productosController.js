@@ -26,7 +26,7 @@ const controlador = {
             price: req.body.price,
             measure: req.body.measure,
             stock: req.body.stock,
-            img: req.body.myfile
+            image: req.body.myfile
         }
 
         // console.log(req)
