@@ -86,8 +86,8 @@ Vamos por más!_
   
 * **Nestor Miguens:**
     * _Muy satisfecho con el resultado final._
-    * _La predisposicion de mis compañeros para resolver todas las consignas del sprint._
-    * _Mas tiempo ya que este sprint fue muy proximo al trabajo individual 2._
+    * _La La rapidez con la que se solucionaron las consignas del sprint._
+    * _La verdad que nada ya que en este sprint hubo mas tiempo que el anterior._
   
 * **Emilio Alposta:**
     * _De mi parte con un imprevisto, por suerte se pudo resolver dentro de todo a tiempo para poder participar activamente en el sprint, igualmente el resto del equipo se puso la 10 para dividirse los temas para poder seguir para adelante. El equipo demostro ser muy responsable y comprometido._
