@@ -63,3 +63,35 @@ Vamos por más!_
     * _Se hizo un muy buen trabajo, por mas que tambien estabamos cada uno con el tp individual, cada uno se pudo comprometer y hacer su parte, aunque fue un poco cargado el tener las dos cosas en simultaneo pudimos salir para adelante, tal vez no llegamos con todo lo que planeabamos pero estamos bien encaminados._
     * _La buena distribucion de las tareas y el compromiso de cada uno para cumplir con su parte._
     * _No llegamos a cumplir con todo lo que nos planteamos, pero mas que anda porque tambien estabamos con el tp individual. Se pudo haber pulido mas el tema de estilos del producto entregado y cumplir con la responsividad de la pagina por falta de tiempo._
+
+## SPRINT 4
+
+## Preguntas:
+
+* ¿Cómo te sentís con lo que se hizo en este sprint que paso?
+* ¿Qué te gustaría resaltar de lo que más te gusto de este sprint o te gustaría seguir aplicando?
+* ¿Qué sentís que se hizo mal o se podría mejorar o cambiar?
+
+## Respuestas:
+
+* **Cristian Sánchez:**
+    * _Me sentí cómodo. Tuvimos algunos contratiempos personales e individuales, y en esos momentos, el resto de los integrantes tomó las tareas necesarias para entregar en tiempo y forma._
+    * _La división de tareas en base a los fuertes de cada uno, y la integración de los resultados._
+    * _La gestión del tiempo no fue la óptima para poder sumar funcionalidades y extras más allá de lo pedido en el Sprint._
+  
+* **Matias Sanchez:**
+    * _Me senti conforme con lo realizado, ya que coincidimos plenamente con las opiniones de cada uno, haciendo agil la concrecion de las consignas._
+    * _La facilidad en ponernos de acuerdo._
+    * _Podriamos extremar un poco mas el control del resultado entregable._
+  
+* **Nestor Miguens:**
+    * _Muy satisfecho con el resultado final._
+    * _La predisposicion de mis compañeros para resolver todas las consignas del sprint._
+    * _Mas tiempo ya que este sprint fue muy proximo al trabajo individual 2._
+  
+* **Emilio Alposta:**
+    * _Se hizo un muy buen trabajo, por mas que tambien estabamos cada uno con el tp individual, cada uno se pudo comprometer y hacer su parte, aunque fue un poco cargado el tener las dos cosas en simultaneo pudimos salir para adelante, tal vez no llegamos con todo lo que planeabamos pero estamos bien encaminados._
+    * _La buena distribucion de las tareas y el compromiso de cada uno para cumplir con su parte._
+    * _No llegamos a cumplir con todo lo que nos planteamos, pero mas que anda porque tambien estabamos con el tp individual. Se pudo haber pulido mas el tema de estilos del producto entregado y cumplir con la responsividad de la pagina por falta de tiempo._
+
+
