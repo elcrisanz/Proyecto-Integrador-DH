@@ -80,9 +80,9 @@ Vamos por más!_
     * _La gestión del tiempo no fue la óptima para poder sumar funcionalidades y extras más allá de lo pedido en el Sprint._
   
 * **Matias Sanchez:**
-    * _Me senti conforme con lo realizado, ya que coincidimos plenamente con las opiniones de cada uno, haciendo agil la concrecion de las consignas._
-    * _La facilidad en ponernos de acuerdo._
-    * _Podriamos extremar un poco mas el control del resultado entregable._
+    * _Me senti muy bien, porque logramos lo que se habia pedido._
+    * _Subsanamos los inconvenientes que se presentaron rapidamente._
+    * _Dejando de lado los problemas que se presentaron, me parece que podriamos haber dedicado mas tiempo a lo solicitado._
   
 * **Nestor Miguens:**
     * _Muy satisfecho con el resultado final._
