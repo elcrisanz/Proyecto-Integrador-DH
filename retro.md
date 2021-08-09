@@ -90,8 +90,8 @@ Vamos por más!_
     * _Mas tiempo ya que este sprint fue muy proximo al trabajo individual 2._
   
 * **Emilio Alposta:**
-    * _Se hizo un muy buen trabajo, por mas que tambien estabamos cada uno con el tp individual, cada uno se pudo comprometer y hacer su parte, aunque fue un poco cargado el tener las dos cosas en simultaneo pudimos salir para adelante, tal vez no llegamos con todo lo que planeabamos pero estamos bien encaminados._
-    * _La buena distribucion de las tareas y el compromiso de cada uno para cumplir con su parte._
-    * _No llegamos a cumplir con todo lo que nos planteamos, pero mas que anda porque tambien estabamos con el tp individual. Se pudo haber pulido mas el tema de estilos del producto entregado y cumplir con la responsividad de la pagina por falta de tiempo._
+    * _De mi parte con un imprevisto, por suerte se pudo resolver dentro de todo a tiempo para poder participar activamente en el sprint, igualmente el resto del equipo se puso la 10 para dividirse los temas para poder seguir para adelante. El equipo demostro ser muy responsable y comprometido._
+    * _La responsabilidad y compromiso de cada uno, la verdad que resalto bastante este sprint._
+    * _Si bien huboi contratiempos se pudo haber atacado el sprint mas temprano aprovechando el tiempo sobrante para agregar contenido adicional extra._
 
 
