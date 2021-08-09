@@ -12,9 +12,8 @@
 
         <!--<i class="far fa-times-circle"></i>!-->
         <h3>Editar Producto</h3>
-        <form action="/products/editar/<%=productoAEditar.id%>?_method=PUT" method="POST" class="product-form">
-        
-            <div class="form-floating mb-2">
+        <form action="/products/editar/<%=productoAEditar.id%>?_method=PUT" method="POST" class="product-form" enctype="multipart/form-data">
+                <div class="form-floating mb-2">
                 <input type="text" name= "name" class="form-control" id="registroNombre" placeholder="Nombre" value="<%= productoAEditar.name %>"></input>
                 <label for="registroNombre">Nombre:</label>
             </div>
@@ -45,9 +44,9 @@
                 </div>
             </div>
                  
-                <div class="archivo"action="/action_page.php">
-                    <label for="myfile">Cambiar foto actual: </label>
-                <input type="file" id="myfile" name="myfile"><br><br>    
+            <div class="archivo"action="/action_page.php">
+                     <label for="myfile">Cambiar foto actual: </label>
+                <input type="file" id="fotoProducto" name="fotoProducto"><br><br>    
                 </div>
             <div class="enviar">
                 <button type="submit">Enviar</button>

@@ -26,10 +26,8 @@ const controlador = {
             price: req.body.price,
             measure: req.body.measure,
             stock: req.body.stock,
-            image: req.body.myfile
+            image: req.file.filename
         }
-
-        // console.log(req)
 
         products.push(productoNuevo);
 
@@ -52,7 +50,9 @@ const controlador = {
     },
 
     update: (req, res) => {
-        let id= req.params.id
+        let id = req.params.id
+        
+        let image = req.file.filename
 
         for (let p of products){
             if ( p.id==id){
@@ -60,7 +60,7 @@ const controlador = {
                 p.price = req.body.price;
                 p.measure = req.body.measure;
                 p.stock = parseInt(req.body.stock);
-                // p.image= req.body.image,
+                p.image = image;
                 break;
             }
         }

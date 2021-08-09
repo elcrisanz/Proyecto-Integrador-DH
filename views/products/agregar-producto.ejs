@@ -11,7 +11,7 @@
     <div class="product-form-box" >
         <!-- <i class="far fa-times-circle"></i> !-->
         <h3>Agregar Producto</h3>
-        <form action="/products/agregar" method="POST" class="product-form">
+        <form action="/products/agregar" method="POST" class="product-form" enctype="multipart/form-data"   >
         
             <div class="form-floating mb-2">
                 <input type="text" class="form-control" id="registroNombre" name= "name"  placeholder="Nombre"></input>
@@ -46,7 +46,7 @@
                  
                 <div class="archivo"action="/action_page.php">
                     <label for="myfile">Foto del Producto:</label>
-                <input type="file" id="myfile" name="myfile"><br><br>    
+                <input type="file" id="fotoProducto" name="fotoProducto"><br><br>    
                 </div>
             <div class="enviar">
                 <button type="submit">Enviar</button>
