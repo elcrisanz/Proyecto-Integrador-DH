@@ -21,31 +21,30 @@ const controlador = {
     },
 
     loginProcess: (req, res) => {
-        console.log("todo marcha bien... o no?")
-        let userToLogin = controlador.findByEmail(req.body.email);
+        console.log(req.body)
+        let userToLogin = controlador.findByEmail(req.body.mail);
 
         if (userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkThePassword){
                 // return res.redirect('/user/profile');
+                console.log("el login salio bien")
                 return res.redirect('/');
             }
-            return res.redirect('/', {
-                errors: {
-                    email: {
-                        msg: 'Las credenciales son invalidas'
-                    }
-                }
-            });
+
+            console.log("la pass esta mal")
+            return res.redirect('/');
+            // return res.redirect('/', {
+            //     errors: {
+            //         email: {
+            //             msg: 'Las credenciales son invalidas'
+            //         }
+            //     }
+            // });
         }
 
-        return res.render('/', {
-            errors: {
-                email: {
-                    msg: 'No se encuentra este email en nuestra base de datos'
-                }
-            }
-        })
+        console.log("el mail no existe")
+        return res.redirect('/login')
     },
 
     registro: (req,res) =>{
