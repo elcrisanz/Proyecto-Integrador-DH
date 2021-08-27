@@ -88,5 +88,21 @@
   "codigo": "A303",
   "image": "anillo3.jpeg",
   "stock": 99
+ },
+ {
+  "id": 11,
+  "name": "AAA",
+  "price": "1",
+  "measure": "1",
+  "stock": "1",
+  "image": "slide-1627396988576-2969952593-e81e857563131914beba5790dbdb92341627396991-1920-1920.png"
+ },
+ {
+  "id": 12,
+  "name": "BBB",
+  "price": "1",
+  "measure": "1",
+  "stock": "1",
+  "image": "slide-1627396988576-2969952593-e81e857563131914beba5790dbdb92341627396991-1920-1920.png"
  }
 ]
