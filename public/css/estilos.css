@@ -834,6 +834,20 @@ a{
         transform: rotate(360deg);
         box-shadow: 0 0 5px var(--green);
       }
+/* Perfil de usuario */
+
+.perfil{
+    background-color: #f7f7f7;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+}
+
+.foto-de-perfil{
+    outline: 0.4rem solid #f2dac4;
+    width: 25%;
+    height: 25%;
+}
 
 /* /////////////////////////////// */
 /* ///////MEDIA QUERIES/////////// */
@@ -976,6 +990,20 @@ a{
     
     .composition:hover .composition__photo:not(:hover) {
         transform: scale(1);
+    }
+
+    .perfil{
+        background-color: #f7f7f7;
+        display: block;
+        padding: 15px;
+        justify-content: center;
+    }
+    
+    .foto-de-perfil{
+        outline: 0.4rem solid #f2dac4;
+        width: 75%;
+        height: 75%;
+        margin: 10%;
     }
 
 }

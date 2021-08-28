@@ -4,6 +4,9 @@ const controlador = {
     },
     carrito: (req,res) =>{
         res.render('./products/carrito-de-compras');
+    },
+    perfil: (req, res) => {
+        res.render('./users/perfil');
     }
 };
 

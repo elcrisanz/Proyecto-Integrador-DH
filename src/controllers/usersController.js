@@ -34,7 +34,7 @@ const controlador = {
 
             console.log("la pass esta mal")
             return res.redirect('/');
-            // return res.redirect('/', {
+            // return res.render('/', {
             //     errors: {
             //         email: {
             //             msg: 'Las credenciales son invalidas'
@@ -44,7 +44,14 @@ const controlador = {
         }
 
         console.log("el mail no existe")
-        return res.redirect('/login')
+        return res.redirect('/')
+        // return res.render('/', {
+        //     errors: {
+        //         email: {
+        //             msg: 'El mail ingresado no existe en la base de datos'
+        //         }
+        //     }
+        // });
     },
 
     registro: (req,res) =>{
