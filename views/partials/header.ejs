@@ -13,9 +13,17 @@
         <br>
         Entrar 
       </a>
-      <a id="registrarse" href="/Registro" data-bs-toggle="modal" data-bs-target="#registroModal">| Registrarse</a>
+      <div> | </div>
+      <a id="registrarse" href="/Registro" data-bs-toggle="modal" data-bs-target="#registroModal">Registrarse</a>
       <% } else {  %>
           <a href="/perfil">Mi Perfil</a>
+          <div> | </div>
+          <a href="/user/logout">Logout</a>
+          <!-- <a href="/">
+            <form action="/user/logout">
+              <button type="submit">Logout</button>
+            </form>
+          </a> -->
       <% } %>
         </li>
       <li><a href="/carrito"><i class="fas fa-shopping-cart fa-2x chart-icon"></i><br> Ir al Carrito</a></li>

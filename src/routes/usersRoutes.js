@@ -15,7 +15,7 @@ router.post('/login', usersController.loginProcess);
 router.get('/registro', guestMiddleware, usersController.registro);
 // router.get('/profile', authMiddleware, usersController.profile)
 router.get('/logout', usersController.logout);
-router.post('/registro',validacionesRegistro, uploadFile.single('avatar'),usersController.userStore);
+router.post('/registro', uploadFile.single('avatar'),usersController.userStore);
 
 // router.get('/profile', usersController.profile)
 

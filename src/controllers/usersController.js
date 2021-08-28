@@ -28,7 +28,7 @@ const controlador = {
         if (userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkThePassword) {
-                delete userToLogin.password;
+                // delete userToLogin.password;
                 req.session.userLogged = userToLogin;
 
                 if(req.body.remember_user){
@@ -37,7 +37,6 @@ const controlador = {
                 // return res.redirect('/user/profile');
                 console.log("el login salio bien")
                 
-
                 return res.redirect('/');
             }
 
@@ -75,6 +74,7 @@ const controlador = {
 
     logout: (req, res) => {
         req.session.destroy();
+        console.log("Se deslogueo exitosamente")
         return res.redirect('/');
     },
     userStore: (req, res) => {

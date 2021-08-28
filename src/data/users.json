@@ -41,5 +41,13 @@
   "password": "$2a$10$SixveNS88OkKV421i3jdP.vP2ceYbHHd5iohKq7b20UA.X0whfSp2",
   "email": "cristian.sanz@gmail.com",
   "image": "1630176158794.jpg"
+ },
+ {
+  "id": 7,
+  "name": "emilio",
+  "lastName": "alposta",
+  "password": "$2a$10$EOYEpSIjiPFm4xAumUCYbu6Xs2UNpq5/CNvCgwqeN5kbDuh9qI6j6",
+  "email": "emilioalposta@gmail.com",
+  "image": "1630180431476.png"
  }
 ]
