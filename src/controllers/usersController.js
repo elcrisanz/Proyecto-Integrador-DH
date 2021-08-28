@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs');
+const { ENGINE_METHOD_ALL } = require('constants');
+
 
 const usersFilePath = path.join(__dirname, './../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -75,6 +77,32 @@ const controlador = {
         req.session.destroy();
         return res.redirect('/');
     },
+    userStore: (req, res) => {
+        let idNuevo = 0;
+        
+        for (let e of users) {
+            if (idNuevo < e.id) {
+                idNuevo = e.id;
+            }
+        }
+        idNuevo++;
+
+        let usuarioNuevo = {
+            id: idNuevo,
+            name: req.body.name,
+            lastName: req.body.lastName,
+            password: bcryptjs.hashSync(req.body.password,10),
+            email: req.body.email,
+            image: req.file.filename
+        }
+
+        users.push(usuarioNuevo);
+
+        fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
+        res.redirect('/')
+
+    },
+
 };
 
 module.exports = controlador;
