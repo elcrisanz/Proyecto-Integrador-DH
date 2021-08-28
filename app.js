@@ -8,7 +8,7 @@ app.use(cookieParser());
 app.use(session( {
   secret: "Rukha",
   resave: false,
-  saveUnitialized: true,
+  saveUninitialized: true,
 } ));
 
 const productosRouter = require ('./src/routes/productosRoutes')

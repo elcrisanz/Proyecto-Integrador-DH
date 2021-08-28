@@ -14,40 +14,47 @@
     <div class="contenedor">
         <!--<i class="far fa-times-circle"></i>!-->
         <h3>Crea tu cuenta</h3>
-        <form action="/registro" method="POST">
+        <form action="/user/registro" method="POST" enctype="multipart/form-data">
         
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre"></input>
+                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" name="name" required></input>
                 <label for="registroNombre">Nombre</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroApellido" placeholder="Apellido"></input>
+                <input type="text" class="form-control" id="registroApellido" placeholder="Apellido" name="lastName" required></input>
                 <label for="registroApellido">Apellido</label>
             </div> 
             <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña"></input>
+                <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña" name="password" required></input>
                 <label for="registroContraseña">Contraseña</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="registroConfirmaContraseña" placeholder="Confirmar contraseña"></input>
+                <input type="password" class="form-control" id="registroConfirmaContraseña" placeholder="Confirmar contraseña" name="passwordConfirm" required></input>
                 <label for="registroConfirmaContraseña">Confirmar contraseña</label>
             </div>
             <div class="form-floating mb-2">
-                <input type="email" class="form-control" id="registroEmail" placeholder="Correo electrónico"></input>
+                <input type="email" class="form-control" id="registroEmail" placeholder="Correo electrónico" name="email" required></input>
                 <label for="registroEmail">Email</label>
             </div>
             <div class="form-floating">
-                <input type="email" class="form-control" id="registroConfirmEmail" placeholder="Confirma correo electrónico:"></input>
+                <input type="email" class="form-control" id="registroConfirmEmail" placeholder="Confirma correo electrónico:" name="emailConfirm" required></input>
                 <label for="registroConfirmEmail">Confirmar Email</label>
             </div>
             <br>
+            <div class="form-float">
+                <label for="avatar">Carga tu foto de perfil: </label>
+                <br>               
+                <input type="file" id="avatar" name= "avatar">
+            </div>
+            <br>
             <div class="crear">
-                <button type="submit">Crear cuenta</button>
+                <button type="submit" id="registro">Crear Cuenta</button>   
             </div>
         </form>
         <div>
             <p class="tenescuenta">Ya tenés cuenta?  <a href="/Login">Iniciá sesión acá</a></p>
         </div>
     </div>
+    
 </body>
 </html>

@@ -1,37 +1,45 @@
 [
-    {
-        "id": 1,
-        "name": "Carlos",
-        "lastName":"Ruiz Diaz",
-        "password": "xxxxxxx",
-        "email":"cruizdiaz@gmail.com" 
-    },
-    {
-        "id": 2,
-        "name": "Mateo",
-        "lastName":"Rodriguez",
-        "password": "ccbcbbbcb",
-        "email":"mateoRo@hotmail.com"
-    },
-    {
-        "id":3,
-        "name": "Braian",
-        "lastName":"Fernandez",
-        "password": "rererere",
-        "email":"braian73@hotmail.com"
-    },
-    {
-        "id": 4,
-        "name": "Sergio",
-        "lastName":"Ledezma",
-        "password": "gsgsgsgsgs",
-        "email":"sledezma@gmail.com"
-    },
-    {
-        "id": 5,
-        "name": "ElBarto",
-        "lastName":"AwanteElPaint",
-        "password": "$2a$10$ZnfP1DYkBZel5S.0Pg1xT.PIRga4nF03oV2TSS91kTh9t4uCoS47q",
-        "email":"elbartowashere@gmail.com"
-    }
+ {
+  "id": 1,
+  "name": "Carlos",
+  "lastName": "Ruiz Diaz",
+  "password": "xxxxxxx",
+  "email": "cruizdiaz@gmail.com"
+ },
+ {
+  "id": 2,
+  "name": "Mateo",
+  "lastName": "Rodriguez",
+  "password": "ccbcbbbcb",
+  "email": "mateoRo@hotmail.com"
+ },
+ {
+  "id": 3,
+  "name": "Braian",
+  "lastName": "Fernandez",
+  "password": "rererere",
+  "email": "braian73@hotmail.com"
+ },
+ {
+  "id": 4,
+  "name": "Sergio",
+  "lastName": "Ledezma",
+  "password": "gsgsgsgsgs",
+  "email": "sledezma@gmail.com"
+ },
+ {
+  "id": 5,
+  "name": "ElBarto",
+  "lastName": "AwanteElPaint",
+  "password": "$2a$10$ZnfP1DYkBZel5S.0Pg1xT.PIRga4nF03oV2TSS91kTh9t4uCoS47q",
+  "email": "elbartowashere@gmail.com"
+ },
+ {
+  "id": 6,
+  "name": "Cristian",
+  "lastName": "Sánchez",
+  "password": "$2a$10$SixveNS88OkKV421i3jdP.vP2ceYbHHd5iohKq7b20UA.X0whfSp2",
+  "email": "cristian.sanz@gmail.com",
+  "image": "1630176158794.jpg"
+ }
 ]
