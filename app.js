@@ -3,13 +3,19 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const app = express()
 
+
 // ************ Middlewares - (don't touch) ************
-app.use(cookieParser());
+const userLoggedMiddleware = require ('./src/middlewares/userLoggedMiddleware')
+
 app.use(session( {
   secret: "Rukha",
   resave: false,
-  saveUnitialized: true,
+  saveUninitialized: false,
 } ));
+
+app.use(cookieParser());
+app.use(userLoggedMiddleware);
+
 
 const productosRouter = require ('./src/routes/productosRoutes')
 const usersRouter = require ('./src/routes/usersRoutes')
