@@ -17,8 +17,7 @@ const controlador = {
     },
 
     login: (req, res) => {
-
-        // res.render('./login');
+        //console.log(req.cookies);
         return res.render('/')
     },
 
@@ -31,7 +30,7 @@ const controlador = {
                 req.session.userLogged = userToLogin;
 
                 if(req.body.remember_user){
-                    res.cookie('userEmail', req.body.email,{maxAge: 1000 * 120})
+                    res.cookie('userEmail', req.body.mail,{maxAge: 1000 * 120})
                 }
                 // return res.redirect('/user/profile');
                 console.log("el login salio bien")
@@ -67,12 +66,15 @@ const controlador = {
     },
 
     profile: (req, res) => {
+        console.log(req.cookies.userEmail);
+
         res.render('./users/perfil', {
             user: req.session.userLogged
         });
     },
 
     logout: (req, res) => {
+        res.clearCookie('userEmail');
         req.session.destroy();
         console.log("Se deslogueo exitosamente")
         return res.redirect('/');
@@ -95,11 +97,11 @@ const controlador = {
             email: req.body.email,
             image: req.file.filename
         }
-
+        req.session.userLogged=usuarioNuevo;
         users.push(usuarioNuevo);
 
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/perfil')
+        res.redirect('./perfil')
 
     },
 

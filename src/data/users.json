@@ -73,5 +73,37 @@
   "password": "$2a$10$WJsTCpUm41x4rmJ2Nw9RburyEvBDNT0kFfcsEw.tO/ilI5PyQhq6S",
   "email": "cristian.sanz@gmail.com",
   "image": "1630194960816.jpg"
+ },
+ {
+  "id": 11,
+  "name": "Alcantarilla",
+  "lastName": "Alcantara",
+  "password": "$2a$10$GiJYMtcoGEfYRUbzO4mNe.FA3z3/Xv7CGoj.kl1kx0kHQ7Te3vG9m",
+  "email": "alquis@npm.com",
+  "image": "1630257882484.png"
+ },
+ {
+  "id": 12,
+  "name": "Alcantarilla",
+  "lastName": "Alcantara",
+  "password": "$2a$10$4aFjtxx9JWSbbxH.HC0lwOJ76wz6XQyu97dFqd0jFLNLkzxmrpHFO",
+  "email": "alquis@npm.com",
+  "image": "1630257962404.png"
+ },
+ {
+  "id": 13,
+  "name": "mati",
+  "lastName": "san",
+  "password": "$2a$10$6Ax73jqjGfvGvAySpl1Cp.s6tdY1HoDXCyOfoRo.LU5Zw/mSJgBlu",
+  "email": "mati@hola.com",
+  "image": "1630259916457.png"
+ },
+ {
+  "id": 14,
+  "name": "Angel",
+  "lastName": "mediano",
+  "password": "$2a$10$dBBo4M1UAHuCAuFUADYX1uDHKKNhjoSofPwFikxbaWMQDI.rQ0cNS",
+  "email": "angel@ya.com",
+  "image": "1630276169479.png"
  }
 ]
