@@ -49,5 +49,29 @@
   "password": "$2a$10$EOYEpSIjiPFm4xAumUCYbu6Xs2UNpq5/CNvCgwqeN5kbDuh9qI6j6",
   "email": "emilioalposta@gmail.com",
   "image": "1630180431476.png"
+ },
+ {
+  "id": 8,
+  "name": "Cristian",
+  "lastName": "Sánchez",
+  "password": "$2a$10$l.6zPiR4CSIgTsDdBfybIeZSBX/dhMlaDL2ztU/pqjhut2RnVAc.K",
+  "email": "cristian.sanz@gmail.com",
+  "image": "1630194436966.jpg"
+ },
+ {
+  "id": 9,
+  "name": "Cristian",
+  "lastName": "Sánchez",
+  "password": "$2a$10$MSV4ZV49f0fQf4tBsNQcVO7QmTMxoIGwNjDc2GU0vZP1WBscaSq5O",
+  "email": "cristian.sanz@gmail.com",
+  "image": "1630194748409.jpg"
+ },
+ {
+  "id": 10,
+  "name": "Cristian",
+  "lastName": "Sánchez",
+  "password": "$2a$10$WJsTCpUm41x4rmJ2Nw9RburyEvBDNT0kFfcsEw.tO/ilI5PyQhq6S",
+  "email": "cristian.sanz@gmail.com",
+  "image": "1630194960816.jpg"
  }
 ]

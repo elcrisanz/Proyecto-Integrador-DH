@@ -10,14 +10,14 @@
 <!-- Main -->
 
     <section class="perfil">
-        <img src="/img/users/964a9c5ac9933cc012d0bd80be.jpg" alt="" class="foto-de-perfil" >
+        <img src="/img/<%=user.image %> " alt="" class="foto-de-perfil" >
 
         <div style="padding-left: 25px;">
             <h4>Nombre:</h4>
-            <h5>Elsa Pallo</h5>
+            <h5><%=user.name + " " + user.lastName%> </h5>
             <br>
             <h4>Email:</h4>
-            <h5>elsapallo77@pepe.com</h5>
+            <h5><%=user.email %> </h5>
             <br>
             <button class="btn btn-primary product-button" type="button" id="button-perfil">Editar Datos</button>
         </div>

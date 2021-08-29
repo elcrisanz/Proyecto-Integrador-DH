@@ -5,6 +5,6 @@ const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.index);
 router.get('/carrito', mainController.carrito);
-router.get('/perfil', mainController.perfil);
+// router.get('/perfil', mainController.perfil)
 
 module.exports = router;

@@ -24,7 +24,6 @@ const controlador = {
 
     loginProcess: (req, res) => {
         let userToLogin = controlador.findByEmail(req.body.mail);
-
         if (userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if (isOkThePassword) {
@@ -37,7 +36,8 @@ const controlador = {
                 // return res.redirect('/user/profile');
                 console.log("el login salio bien")
                 
-                return res.redirect('/');
+                return res.redirect('./perfil');
+                // + req.session.userLogged.id, {usuarioLogueado: req.session}
             }
 
             console.log("la pass esta mal")
@@ -67,7 +67,7 @@ const controlador = {
     },
 
     profile: (req, res) => {
-        res.render('./profile', {
+        res.render('./users/perfil', {
             user: req.session.userLogged
         });
     },
@@ -99,7 +99,7 @@ const controlador = {
         users.push(usuarioNuevo);
 
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/')
+        res.redirect('/perfil')
 
     },
 
