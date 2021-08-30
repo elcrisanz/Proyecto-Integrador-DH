@@ -105,9 +105,9 @@ Vamos por más!_
 ## Respuestas:
 
 * **Cristian Sánchez:**
-    * _ ._
-    * _ ._
-    * _ ._
+    * _ Muy contento con lo resolutivo del equipo._
+    * _ El trabajo en equipo sigue siendo nuestro fuerte. Nos comprometimos con los temas que tomó cada uno y los entregamos en tiempo y forma._
+    * _ Podríamos aprovechar mejor el tiempo para afinar detalles de usabilidad más allá de que no estén pedidos en el sprint._
   
 * **Matias Sanchez:**
     * _ ._
