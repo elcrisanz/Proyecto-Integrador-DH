@@ -94,4 +94,34 @@ Vamos por más!_
     * _La responsabilidad y compromiso de cada uno, la verdad que resalto bastante este sprint._
     * _Si bien huboi contratiempos se pudo haber atacado el sprint mas temprano aprovechando el tiempo sobrante para agregar contenido adicional extra._
 
+## SPRINT 5
+
+## Preguntas:
+
+* ¿Cómo te sentís con lo que se hizo en este sprint que paso?
+* ¿Qué te gustaría resaltar de lo que más te gusto de este sprint o te gustaría seguir aplicando?
+* ¿Qué sentís que se hizo mal o se podría mejorar o cambiar?
+
+## Respuestas:
+
+* **Cristian Sánchez:**
+    * _ ._
+    * _ ._
+    * _ ._
+  
+* **Matias Sanchez:**
+    * _ ._
+    * _ ._
+    * _ ._
+  
+* **Nestor Miguens:**
+    * _ ._
+    * _ ._
+    * _ ._
+  
+* **Emilio Alposta:**
+    * _Si bien quedaron algunas dudas cada vez mas contento con el trabajo realizado y con el equipo._
+    * _Como siempre, el trabajo en equipo y la responsabilidad de cada uno._
+    * _Se podria sentarse bien entre todos para analizar a detalle punto por punto de las tareas a hacer antes de arrancar._
+
 
