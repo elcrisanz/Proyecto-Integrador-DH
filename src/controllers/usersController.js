@@ -101,7 +101,7 @@ const controlador = {
         users.push(usuarioNuevo);
 
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('./perfil')
+        res.redirect('./login')
 
     },
 
