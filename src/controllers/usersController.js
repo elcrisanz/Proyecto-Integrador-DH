@@ -18,7 +18,7 @@ const controlador = {
 
     login: (req, res) => {
         //console.log(req.cookies);
-        return res.render('/')
+        return res.redirect('./perfil')
     },
 
     loginProcess: (req, res) => {
@@ -66,7 +66,6 @@ const controlador = {
     },
 
     profile: (req, res) => {
-        console.log(req.cookies.userEmail);
 
         res.render('./users/perfil', {
             user: req.session.userLogged
