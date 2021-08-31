@@ -110,9 +110,9 @@ Vamos por más!_
     * _Podríamos aprovechar mejor el tiempo para afinar detalles de usabilidad más allá de que no estén pedidos en el sprint._
   
 * **Matias Sanchez:**
-    * _ ._
-    * _ ._
-    * _ ._
+    * _Satisfecho completamente.Cada miembro aporto lo neceesario para cumplir lo solicitado._
+    * _La voluntad y predisposicion de todos._
+    * _Quizas podriamos administrar mejor los tiempos._
   
 * **Nestor Miguens:**
     * _ ._
