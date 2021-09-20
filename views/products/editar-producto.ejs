@@ -24,16 +24,14 @@
             
             <div>
                 <select class="form-select" aria-label="Tipo Producto">
-                    <option selected>Seleccionar Categoria</option>
-                    <option value="Aros">Aros</option>
-                    <option value="Anillos y Midis">Anillos y Midis</option>
-                    <option value="Cadenas y Dijes">Cadenas y Dijes</option>
-                    <option value="Pulseras">Pulseras</option>
-                    <option value="Tobilleras">Tobilleras</option>
-                    <option value="Accesorios">Accesorios</option>
-                    <option value="Ruanas y Pañuelos">Ruanas y Pañuelos</option>
-                    <option value="Ellos">Ellos</option>
-                    <option value="Oulet">Oulet</option>
+                    
+                    <% for (let i = 0; i<categories.length; i++) { %> 
+                       <%  if (categories[i].id == productoAEditar.id_category) { %>
+                        <option selected><%= productoAEditar.category.category %> </option> 
+                        <% } else {%> 
+                        <option value="<%= categories[i].category %> "><%= categories[i].category %></option>
+                        <%}  %> 
+                    <%}  %>     
                 </select>
             </div>
             <br>

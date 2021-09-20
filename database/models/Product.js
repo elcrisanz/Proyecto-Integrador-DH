@@ -1,5 +1,4 @@
-const Category = require("./Category");
-
+'use strict';
 module.exports = (sequelize, DataTypes) => {
     let alias = "products";
     let cols = {
@@ -11,18 +10,21 @@ module.exports = (sequelize, DataTypes) => {
         },
         name: {
             type: DataTypes.STRING(200),
-            allowNull: false        
+            allowNull: false
         },
         price: {
             type: DataTypes.DECIMAL,
-            allowNull: false     
+            allowNull: false
         },
         image: {
             type: DataTypes.STRING(200),
             defaultValue: 'rukhaAvatar.jpg',
             allowNull: false
         },
-
+        id_category: {
+            type: DataTypes.INTEGER(6),
+            allowNull: false
+        },
     };
     let config = {
         tableName: "product",

@@ -8,10 +8,12 @@ let db = require ('../../database/models')
 const controlador = {
    
     agregar: (req, res) => {
-        db.measures.findAll()
-            .then(function (measures) {
-                console.log(measures)
-            res.render('./products/agregar-producto', {measures: measures})
+        let pedidoCategories = db.categories.findAll();
+        let pedidoMeasures = db.measures.findAll();
+
+        Promise.all([pedidoCategories, pedidoMeasures])
+            .then(function([categories, measures]){
+            res.render('./products/agregar-producto', {categories: categories, measures: measures})
         })
     },
 
@@ -49,9 +51,14 @@ const controlador = {
     },
 
     editar: (req, res) => {
-        db.products.findByPk(req.params.id)
-            .then(function (productoEncontrado) {
-                res.render('./products/editar-producto', { productoAEditar: productoEncontrado });
+        let pedidoCategories = db.categories.findAll();
+        let pedidoProduct = db.products.findByPk(req.params.id, {
+            include: [{association: "category"}]
+        })
+        
+        Promise.all([pedidoCategories, pedidoProduct])
+        .then(function([categories, product]){
+            res.render('./products/editar-producto', { categories: categories, productoAEditar: product });
             })
         // let id= req.params.id
         // let productoEncontrado;
