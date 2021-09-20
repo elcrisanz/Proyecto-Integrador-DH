@@ -20,34 +20,50 @@
             <div class="form-floating mb-2">
                 <input type="number" class="form-control" id="registroPrecio" name= "price" placeholder="Precio"></input>
                 <label for="registroPrecio">Precio:</label>
-            </div> 
-            <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroMedida" name= "measure" placeholder="Medida"></input>
-                <label for="registroMedida">Medida:</label>
             </div>
-            <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroStock" name= "stock" placeholder="Stock"></input>
-                <label for="registroStock">Stock:</label>
+            <div>
+                <select class="form-select" aria-label="Tipo Producto">
+                    <option selected>Seleccionar Categoria</option>
+                    <option value="Aros">Aros</option>
+                    <option value="Anillos y Midis">Anillos y Midis</option>
+                    <option value="Cadenas y Dijes">Cadenas y Dijes</option>
+                    <option value="Pulseras">Pulseras</option>
+                    <option value="Tobilleras">Tobilleras</option>
+                    <option value="Accesorios">Accesorios</option>
+                    <option value="Ruanas y Pañuelos">Ruanas y Pañuelos</option>
+                    <option value="Ellos">Ellos</option>
+                    <option value="Oulet">Oulet</option>
+                </select>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn" type="button">Tipo Producto</button>
-                <div class="dropdown-content">
-                    <a href="#">Aros</a>
-                    <a href="#">Anillos y Midis</a>
-                    <a href="#">Cadenas y Dijes</a>
-                    <a href="#">Pulseras</a>
-                    <a href="#">Tobilleras</a>
-                    <a href="#">Accesorios</a>
-                    <a href="#">Ruanas y Pañuelos</a>
-                    <a href="#">Ellos</a>
-                    <a href="#">Oulet</a>
-                </div>
-            </div>
-                 
-                <div class="archivo"action="/action_page.php">
-                    <label for="myfile">Foto del Producto:</label>
+            <br>
+            <div class="archivo"action="/action_page.php">
+                <label for="myfile">Foto del Producto:</label>
                 <input type="file" id="fotoProducto" name="fotoProducto"><br><br>    
+            </div>
+            <br>
+            <h6 style="font-weight: bold;">Unidades disponibles por medidas:</h6>
+            
+                
+                <% for (let i = 0; i<measures.length; i++) { %>
+                <div class="form-floating mb-2">
+                    <input type="number" class="form-control" id="registroSStock" name= "<% measures[i].size %> Stock" placeholder="SStock" value="0"></input>
+                    <label for="registroSStock"><%= measures[i].size%>  Stock:</label>
                 </div>
+                <% } %> 
+            
+            <!-- <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="registroMStock" name= "MStock" placeholder="MStock" value="0"></input>
+                <label for="registroMStock">Medium Stock:</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="registroLStock" name= "LStock" placeholder="LStock" value="0"></input>
+                <label for="registroLStock">Large Stock:</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="registroXLStock" name= "XLStock" placeholder="XLStock" value="0"></input>
+                <label for="registroXLStock">ExtraLarge Stock:</label>
+            </div> -->
+                 
             <div class="enviar">
                 <button type="submit">Enviar</button>
             </div>

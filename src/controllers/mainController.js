@@ -1,4 +1,7 @@
+let db = require ("../../database/models")
+
 const controlador = {
+    
     index: (req,res) =>{
         res.render('index');
     },

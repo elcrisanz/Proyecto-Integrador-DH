@@ -1,4 +1,4 @@
-[ 
+[
  {
   "id": 5,
   "name": "ElBarto",
@@ -69,5 +69,13 @@
   "password": "$2a$10$6Ax73jqjGfvGvAySpl1Cp.s6tdY1HoDXCyOfoRo.LU5Zw/mSJgBlu",
   "email": "mati@hola.com",
   "image": "1630259916457.png"
+ },
+ {
+  "id": 14,
+  "name": "Cristian",
+  "lastName": "Sánchez",
+  "password": "$2a$10$IFl2NK6qpKv3Q5aByjL5zeFst/leuSrgRTvmIzB5n7JJypPhvV7lC",
+  "email": "cristian.sanz@gmail.com",
+  "image": "1631993000372.jpg"
  }
 ]
