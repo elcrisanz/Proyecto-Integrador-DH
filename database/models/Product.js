@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         image: {
             type: DataTypes.STRING(200),
-            defaultValue: 'rukhaAvatar.jpg',
+            defaultValue: 'rukhaProductImage.jpg',
             allowNull: false
         },
         id_category: {
