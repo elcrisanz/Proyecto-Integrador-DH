@@ -95,7 +95,7 @@ const controlador = {
             lastName: req.body.lastName,
             password: bcryptjs.hashSync(req.body.password,10),
             email: req.body.email,
-            image: req.file.filename
+            avatar: req.file.filename
         }
         req.session.userLogged=usuarioNuevo;
         users.push(usuarioNuevo);

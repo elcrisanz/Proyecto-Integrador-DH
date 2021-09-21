@@ -22,10 +22,10 @@
                 <label for="registroPrecio">Precio:</label>
             </div>
             <div>
-                <select class="form-select" aria-label="Tipo Producto">
+                <select class="form-select" aria-label="Tipo Producto" name= "category">
                     <option selected>Seleccionar Categoria</option>
                     <% for (let i = 0; i<categories.length; i++) { %> 
-                    <option value="<%= categories[i].category %> "><%= categories[i].category %></option>
+                    <option value="<%= categories[i].id %> "><%= categories[i].category %></option>
                     <% } %> 
                 </select>
             </div>

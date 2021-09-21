@@ -18,13 +18,16 @@ const controlador = {
     },
 
     store: (req, res) => {
-        db.products.create({
+     
+            db.products.create({
+            include: [{association: "category"}],
             name: req.body.name,
             price: req.body.price,
            // measure: req.body.measure,
            // stock: req.body.stock,
-            image: req.file.filename
-        })
+            image: req.file.filename,
+            id_category: req.body.category
+            })
         // let idNuevo = 0;
         
         // for (let e of products) {
@@ -52,13 +55,14 @@ const controlador = {
 
     editar: (req, res) => {
         let pedidoCategories = db.categories.findAll();
+        let pedidoMeasures = db.measures.findAll();
         let pedidoProduct = db.products.findByPk(req.params.id, {
-            include: [{association: "category"}]
+            include: [{association: "category"}, {association: "measures"}]
         })
         
-        Promise.all([pedidoCategories, pedidoProduct])
-        .then(function([categories, product]){
-            res.render('./products/editar-producto', { categories: categories, productoAEditar: product });
+        Promise.all([pedidoCategories, pedidoProduct, pedidoMeasures])
+        .then(function([categories, product, measures]){
+            res.render('./products/editar-producto', { categories: categories, productoAEditar: product, measures: measures});
             })
         // let id= req.params.id
         // let productoEncontrado;
@@ -77,6 +81,7 @@ const controlador = {
         let updateProducts = db.products.update({
             name: req.body.name,
             price: req.body.price,
+            id_category: req.body.category,
            // measure: req.body.measure,
            // stock: req.body.stock,
             image: req.file.filename

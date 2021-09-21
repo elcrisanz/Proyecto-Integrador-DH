@@ -28,7 +28,7 @@
   "lastName": "Sánchez",
   "password": "$2a$10$l.6zPiR4CSIgTsDdBfybIeZSBX/dhMlaDL2ztU/pqjhut2RnVAc.K",
   "email": "cristian.sanz@gmail.com",
-  "image": "1630194436966.jpg"
+  "avatar": "1630194436966.jpg"
  },
  {
   "id": 9,
@@ -36,7 +36,7 @@
   "lastName": "Sánchez",
   "password": "$2a$10$MSV4ZV49f0fQf4tBsNQcVO7QmTMxoIGwNjDc2GU0vZP1WBscaSq5O",
   "email": "cristian.sanz@gmail.com",
-  "image": "1630194748409.jpg"
+  "avatar": "1630194748409.jpg"
  },
  {
   "id": 10,
@@ -44,7 +44,7 @@
   "lastName": "Sánchez",
   "password": "$2a$10$WJsTCpUm41x4rmJ2Nw9RburyEvBDNT0kFfcsEw.tO/ilI5PyQhq6S",
   "email": "cristian.sanz@gmail.com",
-  "image": "1630194960816.jpg"
+  "avatar": "1630194960816.jpg"
  },
  {
   "id": 11,
@@ -52,7 +52,7 @@
   "lastName": "Alcantara",
   "password": "$2a$10$GiJYMtcoGEfYRUbzO4mNe.FA3z3/Xv7CGoj.kl1kx0kHQ7Te3vG9m",
   "email": "alquis@npm.com",
-  "image": "1630257882484.png"
+  "avatar": "1630257882484.png"
  },
  {
   "id": 12,
@@ -60,7 +60,7 @@
   "lastName": "Alcantara",
   "password": "$2a$10$4aFjtxx9JWSbbxH.HC0lwOJ76wz6XQyu97dFqd0jFLNLkzxmrpHFO",
   "email": "alquis@npm.com",
-  "image": "1630257962404.png"
+  "avatar": "1630257962404.png"
  },
  {
   "id": 13,
@@ -68,7 +68,7 @@
   "lastName": "san",
   "password": "$2a$10$6Ax73jqjGfvGvAySpl1Cp.s6tdY1HoDXCyOfoRo.LU5Zw/mSJgBlu",
   "email": "mati@hola.com",
-  "image": "1630259916457.png"
+  "avatar": "1630259916457.png"
  },
  {
   "id": 14,
@@ -76,6 +76,14 @@
   "lastName": "Sánchez",
   "password": "$2a$10$IFl2NK6qpKv3Q5aByjL5zeFst/leuSrgRTvmIzB5n7JJypPhvV7lC",
   "email": "cristian.sanz@gmail.com",
-  "image": "1631993000372.jpg"
+  "avatar": "1631993000372.jpg"
+ },
+ {
+  "id": 15,
+  "name": "Cristian",
+  "lastName": "Sánchez",
+  "password": "$2a$10$wzvhKWpTk.ui2rYzw.nWKO0iLuFFvZCU1a7ZMWW6xKDyOLDhcv7H.",
+  "email": "cristian.sanz@gmail.com",
+  "avatar": "1632266884703.jpg"
  }
 ]

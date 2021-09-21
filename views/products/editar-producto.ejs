@@ -23,13 +23,13 @@
             </div>
             
             <div>
-                <select class="form-select" aria-label="Tipo Producto">
+                <select class="form-select" aria-label="Tipo Producto" name="category">
                     
                     <% for (let i = 0; i<categories.length; i++) { %> 
                        <%  if (categories[i].id == productoAEditar.id_category) { %>
-                        <option selected><%= productoAEditar.category.category %> </option> 
+                        <option value = '<%= productoAEditar.id_category %> 'selected><%= productoAEditar.category.category %> </option> 
                         <% } else {%> 
-                        <option value="<%= categories[i].category %> "><%= categories[i].category %></option>
+                        <option value="<%= categories[i].id %> "><%= categories[i].category %></option>
                         <%}  %> 
                     <%}  %>     
                 </select>
@@ -42,24 +42,13 @@
             </div>
             <br>
             <h6 style="font-weight: bold;">Unidades disponibles por medidas:</h6>
-            <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroSStock" name= "SStock" placeholder="SStock"  value="<%= productoAEditar.SStock %>"></input>
-                <label for="registroSStock">Small Stock:</label>
-            </div>
-            <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroMStock" name= "MStock" placeholder="MStock"  value="<%= productoAEditar.MStock %>"></input>
-                <label for="registroMStock">Medium Stock:</label>
-            </div>
-            <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroLStock" name= "LStock" placeholder="LStock"  value="<%= productoAEditar.LStock %>"></input>
-                <label for="registroLStock">Large Stock:</label>
-            </div>
-            <div class="form-floating mb-2">
-                <input type="number" class="form-control" id="registroXLStock" name= "XLStock" placeholder="XLStock"  value="<%= productoAEditar.XLStock %>"></input>
-                <label for="registroXLStock">ExtraLarge Stock:</label>
-            </div>
-
-
+            <% for (let i = 0; i<measures.length; i++) { %>
+                <div class="form-floating mb-2">   
+                    <input type="number" class="form-control" id="registroSStock" name= "<%= measures[i].size %> Stock" placeholder="SStock" value="0"></input>
+                    <label for="registroSStock"><%= measures[i].size%>  Stock:</label>
+                </div>
+                <% } %> 
+        
             <div class="enviar">
                 <button type="submit">Enviar</button>
             </div>
