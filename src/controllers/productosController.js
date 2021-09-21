@@ -73,7 +73,8 @@ const controlador = {
     },
 
     update: (req, res) => {
-        db.products.update({
+        console.log(req.body);
+        let updateProducts = db.products.update({
             name: req.body.name,
             price: req.body.price,
            // measure: req.body.measure,
@@ -84,7 +85,42 @@ const controlador = {
                 id: req.params.id
             }
         })
-
+        let updateStockS = db.products_measures.update({
+            stock: req.body.SStock
+        }, {
+            where: {
+                id: req.params.id,
+                id_measure: 1
+            }
+        })
+        let updateStockM = db.products_measures.update({
+            stock: req.body.MStock
+        }, {
+            where: {
+                id: req.params.id,
+                id_measure: 2
+            }
+        })
+        let updateStockL = db.products_measures.update({
+            stock: req.body.LStock
+        }, {
+            where: {
+                id: req.params.id,
+                id_measure: 3
+            }
+        })
+        let updateStockXL = db.products_measures.update({
+            stock: req.body.XLStock
+        }, {
+            where: {
+                id: req.params.id,
+                id_measure: 4
+            }
+        })
+        Promise.all([updateProducts, updateStockS,updateStockM,updateStockL,updateStockXL])
+        .then(function([products, stockS,stockM,stockL,stockXL]){
+            res.redirect('/products/')
+            })
 
         // let id = req.params.id
         
@@ -102,7 +138,7 @@ const controlador = {
         // }
 
         // fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
-        res.redirect('/products/')
+        
         
     },
     destroy: (req, res) => {
