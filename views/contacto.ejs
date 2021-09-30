@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head.ejs') %>
+  <title>Contacto</title>
+</head>
+<body>
+<!-- Header -->
+<%- include('./partials/header.ejs') %> 
+<!-- Main -->
+    <div class="product-form-box" >
+
+        <!--<i class="far fa-times-circle"></i>!-->
+        <h3>Contactate con nosotras!</h3>
+        <form action="/contacto" method="POST" class="contact-form">
+                <div class="form-floating mb-2">
+                <input type="text" name= "name" class="form-control" id="contactoNombre" placeholder="Nombre">
+            </input>
+                <label for="ContactoNombre">Nombre y Apellido:</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="email" name= "email" class="form-control" id="contactoEmail" placeholder="Email">
+            </input>
+                <label for="ContactoEmail">Email:</label>
+            </div>
+            <div class="form-floating mb-2">
+                <input type="tel" name= "telephone" class="form-control" id="contactotel" placeholder="Telephone">
+            </input>
+                <label for="ContactoTel">Numero de Telefono:</label>
+            </div>
+            <div class="form-floating mb-2">
+                <textarea type= 'textarea' name= "message" class="form-control" id="message" rows="10" cols="150" placeholder="Message">
+                </textarea>
+                <label for="message">Tu Mensaje:</label>
+            </div>
+
+            <div class="enviar">
+                <button type="submit">Enviar</button>
+            </div>
+            <br>
+            <div class="enviar">
+                <button type="reset">Borrar Datos</button>
+            </div>
+        </form>
+    </div>
+<!-- Footer -->
+<%- include('./partials/footer.ejs') %>     
+</body>
+</html>
