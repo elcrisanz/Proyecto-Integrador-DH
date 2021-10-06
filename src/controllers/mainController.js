@@ -1,4 +1,7 @@
 let db = require ("../../database/models")
+const { validationResult } = require ( 'express-validator');
+const { openDelimiter } = require("ejs");
+
 
 const controlador = {
     
@@ -18,14 +21,13 @@ const controlador = {
         res.render('./contacto');
     },
     message: (req, res) => {
-        let mensaje = {
-            name: req.body.name,
-            email: req.body.email,
-            telephone: req.body.telephone,
-            message: req.body.message
+        const resultValidations = validationResult(req)
+        if (resultValidations.errors.length > 0){
+            return res.render('./contacto', {
+                errors: resultValidations.mapped(),
+                oldData: req.body
+            });
         }
-        console.log(mensaje)
-        res.render('./index');
     },
 
 };

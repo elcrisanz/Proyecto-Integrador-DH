@@ -85,5 +85,29 @@
   "password": "$2a$10$wzvhKWpTk.ui2rYzw.nWKO0iLuFFvZCU1a7ZMWW6xKDyOLDhcv7H.",
   "email": "cristian.sanz@gmail.com",
   "avatar": "1632266884703.jpg"
+ },
+ {
+  "id": 16,
+  "name": "matias",
+  "lastName": "sanchez",
+  "password": "$2a$10$AnvM2hZyySsG5F9Sfw75ge7XgVu/GDqydWbr2gdtdKXehSEzrw7TO",
+  "email": "mati@hola.com",
+  "avatar": "1633388916272.png"
+ },
+ {
+  "id": 17,
+  "name": "mati",
+  "lastName": "san",
+  "password": "$2a$10$FkAKrhJq6vUVtExZeKwdYuzo0qwY3H1JJqPaGuHbAblN60YNdk8yq",
+  "email": "mati@hola.com",
+  "avatar": "1633564092321.png"
+ },
+ {
+  "id": 18,
+  "name": "mati",
+  "lastName": "san",
+  "password": "$2a$10$/.nTl0AOhPn9U5LtJQupYuKECduHL9GzSHHG6uJoyHnd9hqSNSnfK",
+  "email": "mati@hola.com",
+  "avatar": "1633564160374.png"
  }
 ]

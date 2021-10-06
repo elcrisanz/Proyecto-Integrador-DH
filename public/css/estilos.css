@@ -20,9 +20,9 @@ html  {
     /* padding-bottom: 10rem; */
 }
 
-.row-catalog {
+/* .row-catalog { */
     /* transform: translate(0%, -100%); */
-}
+/* } */
 
 .row {
     max-width: 114rem;
@@ -664,6 +664,31 @@ a{
     margin: 0 auto;
     float: none;
   }
+/* ///////////////////////////////////
+        CONTACTO FORM 
+/////////////////////////////////// */
+
+  .contacto{
+    display: flex;
+    background-color: #f7f7f7;
+  }
+  .contact-form{
+    max-width: 50vw;
+    margin: left;
+    padding: 30px;
+    display: inline;
+  }
+  #map {    
+    height: 20% !important;
+    width: 10% !important;
+    overflow: visible !important;
+    position: absolute !important;
+    margin-top: 20%;
+    margin-left: 50%;
+  }
+  .text-danger{
+      color: 'red';
+  }
   
 /*///////////////////////////////////////*/
 /*////aca empieza EDITAR PRODUCTO ///////*/
@@ -739,11 +764,6 @@ a{
     .product-form{
         max-width: 50vw;
         margin: auto;
-    }
-    .contact-form{
-        max-width: 50vw;
-        margin: left;
-        padding: 30px;
     }
 
     .products-title {

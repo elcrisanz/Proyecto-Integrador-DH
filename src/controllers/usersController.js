@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs');
 const { ENGINE_METHOD_ALL } = require('constants');
+const { validationResult } = require ( 'express-validator')
 
 
 
@@ -23,6 +24,14 @@ const controlador = {
     },
 
     loginProcess: (req, res) => {
+
+        const resultValidations = validationResult(req)
+        if (resultValidations.errors.length > 0){
+             res.render('users/login', {
+                errors: resultValidations.mapped(),
+                oldData: req.body
+            });
+        }
         let userToLogin = controlador.findByEmail(req.body.mail);
         if (userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
@@ -80,15 +89,23 @@ const controlador = {
         return res.redirect('/');
     },
     userStore: (req, res) => {
-        let idNuevo = 0;
         
+        const resultValidations = validationResult(req)
+        if (resultValidations.errors.length > 0){
+             res.render('users/registro', {
+                errors: resultValidations.mapped(),
+                oldData: req.body
+            });
+        }
+
+
+        let idNuevo = 0;        
         for (let e of users) {
             if (idNuevo < e.id) {
                 idNuevo = e.id;
             }
         }
         idNuevo++;
-
         let usuarioNuevo = {
             id: idNuevo,
             name: req.body.name,
