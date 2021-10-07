@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs');
 const { ENGINE_METHOD_ALL } = require('constants');
+const { validationResult } = require ( 'express-validator')
 
 
 
@@ -22,6 +23,15 @@ const controlador = {
     },
 
     loginProcess: (req, res) => {
+
+        const resultValidations = validationResult(req)
+        if (resultValidations.errors.length > 0){
+             res.render('users/login', {
+                errors: resultValidations.mapped(),
+                oldData: req.body
+            });
+        }
+
         let userToLogin;
         allUsers.forEach(element => {
             if (element.email == req.body.mail) {
@@ -29,6 +39,7 @@ const controlador = {
             }            
         });
         
+
         if (userToLogin) {
             let isOkThePassword;
             if (userToLogin.password == req.body.password) {
@@ -87,9 +98,21 @@ const controlador = {
         console.log("Se deslogueo exitosamente")
         return res.redirect('/');
     },
+
+    userStore: (req, res) => {
+        
+        const resultValidations = validationResult(req)
+        if (resultValidations.errors.length > 0){
+             res.render('users/registro', {
+                errors: resultValidations.mapped(),
+                oldData: req.body
+            });
+        }
+      
     userStore: async (req, res) => {
         let usuarioNuevo;
         await db.users.create({
+
             name: req.body.name,
             last_name: req.body.lastName,
             password: bcryptjs.hashSync(req.body.password,10),
