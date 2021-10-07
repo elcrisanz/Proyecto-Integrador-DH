@@ -30,6 +30,7 @@ module.exports = (sequelize, DataTypes) => {
         },
         admin: {
             type: DataTypes.TINYINT(1),
+            defaultValue: 0,
             allowNull: false
         }
 

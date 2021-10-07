@@ -1,13 +1,23 @@
 const usersController = require('../controllers/usersController');
+let db = require ('../../database/models')
+
 
 
 function userLoggedMiddleware(req,res,next) {
-    res.locals.isLogged=true;
+    res.locals.isLogged = true;
+
+    let allDbUsers = [];
+    db.users.findAll().then(function (users) {
+        allDbUsers = users
+        });
     
     let emailInCookie = req.cookies.userEmail;
-    // let emailInCookie = "csanchez@gmail.com";
-
-    let userFromCookie = usersController.findByEmail(emailInCookie)    
+    let userFromCookie;
+    allDbUsers.forEach(element => {
+        if (element.email == emailInCookie) {
+            userFromCookie = element
+        }
+    });
 
     console.log(userFromCookie)
 
