@@ -17,70 +17,35 @@
         <form action="/user/registro" method="POST" enctype="multipart/form-data">
         
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" name="name" value="<%= locals.oldData ? oldData.name : null %>"></input>
+                <input type="text" class="form-control" id="registroNombre" placeholder="Nombre" name="name" required></input>
                 <label for="registroNombre">Nombre</label>
-                <% if (locals.errors && errors.name){ %>
-                <div class="text-danger">
-                 <%= errors.name.msg %>
-                </div>
-                <% } %>
             </div>
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="registroApellido" placeholder="Apellido" name="lastName" value="<%= locals.oldData ? oldData.lastName : null %>"></input>
+                <input type="text" class="form-control" id="registroApellido" placeholder="Apellido" name="lastName" required></input>
                 <label for="registroApellido">Apellido</label>
-                <% if (locals.errors && errors.lastName){ %>
-                    <div class="text-danger">
-                     <%= errors.lastName.msg %>
-                    </div>
-                    <% } %>
             </div> 
             <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña" name="password" value="<%= locals.oldData ? oldData.password : null %>"></input>
+                <input type="password" class="form-control" id="registroContraseña" placeholder="Contraseña" name="password" required></input>
                 <label for="registroContraseña">Contraseña</label>
-                <% if (locals.errors && errors.password){ %>
-                    <div class="text-danger">
-                     <%= errors.password.msg %>
-                    </div>
-                    <% } %>
             </div>
             <div class="form-floating mb-2">
-                <input type="password" class="form-control" id="registroConfirmaContraseña" placeholder="Confirmar contraseña" name="passwordConfirm" value="<%= locals.oldData ? oldData.passwordConfirm : null %>" ></input>
+                <input type="password" class="form-control" id="registroConfirmaContraseña" placeholder="Confirmar contraseña" name="passwordConfirm" required></input>
                 <label for="registroConfirmaContraseña">Confirmar contraseña</label>
-                <% if (locals.errors && errors.passwordConfirm){ %>
-                    <div class="text-danger">
-                     <%= errors.passwordConfirm.msg %>
-                    </div>
-                    <% } %>
             </div>
             <div class="form-floating mb-2">
-                <input type="email" class="form-control" id="registroEmail" placeholder="Correo electrónico" name="email" value="<%= locals.oldData ? oldData.email : null %>"></input>
+                <input type="email" class="form-control" id="registroEmail" placeholder="Correo electrónico" name="email" required></input>
                 <label for="registroEmail">Email</label>
-                <% if (locals.errors && errors.email){ %>
-                    <div class="text-danger">
-                     <%= errors.email.msg %>
-                    </div>
-                    <% } %>
             </div>
             <div class="form-floating">
-                <input type="email" class="form-control" id="registroConfirmEmail" placeholder="Confirma correo electrónico:" name="emailConfirm" value="<%= locals.oldData ? oldData.emailConfirm : null %>"></input>
+                <input type="email" class="form-control" id="registroConfirmEmail" placeholder="Confirma correo electrónico:" name="emailConfirm" required></input>
                 <label for="registroConfirmEmail">Confirmar Email</label>
-                <% if (locals.errors && errors.emailConfirm){ %>
-                    <div class="text-danger">
-                     <%= errors.emailConfirm.msg %>
-                    </div>
-                    <% } %>
             </div>
             <br>
             <div class="form-float">
                 <label for="avatar">Carga tu foto de perfil: </label>
                 <br>               
                 <input type="file" id="avatar" name= "avatar">
-                <% if (locals.errors && errors.avatar){ %>
-                    <div class="text-danger">
-                     <%= errors.avatar.msg %>
-                    </div>
-                    <% } %>
-            </div> 
+            </div>
             <br>
             <div class="crear">
                 <button type="submit" id="registro">Crear Cuenta</button>   
