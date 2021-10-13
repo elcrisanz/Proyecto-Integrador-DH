@@ -8,6 +8,28 @@ const usersController = require('../controllers/usersController');
 const guestMiddleware = require('../middlewares/guestMiddleware');
 const authMiddleware = require('../middlewares/authMiddleware');
 
+//validaciones
+const validations = [
+    body ('name').notEmpty().withMessage('Debes escribir tu nombre'),
+    body ('lastName').notEmpty().withMessage('Debes escribir tu apellido'),
+    body ('password').notEmpty().withMessage('Debes introducir tu contraseña'),
+    body ('passwordConfirm').notEmpty().withMessage('Debes confirmar tu contraseña'),
+    body ('mailRegistro')
+    .notEmpty().withMessage('Debes escribir tu email').bail()
+    .isEmail().withMessage('Debes escribir un formato valido de correo'),
+    body ('mailRegistro')
+    .notEmpty().withMessage('Debes escribir tu email').bail()
+    .isEmail().withMessage('Debes escribir un formato valido de correo'),
+    body ('emailConfirm').notEmpty().withMessage('Debes confirmar tu email'),
+    body ('avatar').custom ((value, {req}) => {
+        let file = req.file;
+        if (!file) {
+            throw new Error ('Tienes que subir una imagen');
+        }
+        return true;
+    })
+
+]
 
 // router.post('/login', usersController.login);
 router.get('/login', guestMiddleware, usersController.login);
