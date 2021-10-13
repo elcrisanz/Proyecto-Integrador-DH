@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "rukhadb",
-    "host": "127.0.0.1",
+    "username": "rukha",
+    "password": "rukharukha1",
+    "database": "rukha_bd",
+    "host": "mysql-rukha.alwaysdata.net",
     "dialect": "mysql"
   },
   "test": {

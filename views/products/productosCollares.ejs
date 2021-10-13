@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+  <title>Home</title>
+</head>
+<body style="background: #f7f7f7;">
+<!-- Header -->
+<%- include('../partials/header') %> 
+<!-- Main -->
+  <div class="row">
+  
+      <h2 class="products-title">Collares</h2>  
+      <form action="/products/agregar">     
+        <button type="submit" class="btn btn-outline-info add-product" >Agregar Producto</button>
+      </form>
+    
+  
+    <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
+      <% for(let producto of productos) { %>
+        <% if(producto.id_category == 2) { %>
+        <section class="product-box">
+          <a href="/products/detalle/<%=producto.id %>" >
+            <figure class="product-box_image">
+              <img src="/img/<%=producto.image %>" alt="imagen de producto" style="height: 20rem; width: 100%;">
+            </figure>
+            <article class="product-box_data">
+              <h2>$<%=producto.price %></h2>
+              <p><%=producto.name %></p>
+            </article>
+          </a>
+        </section>
+        <% } %>
+        <% } %>
+    </div>
+  
+  </div>
+
+<!-- Footer -->
+<%- include('../partials/footer') %>     
+</body>
+</html>

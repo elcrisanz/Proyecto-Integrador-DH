@@ -30,6 +30,10 @@ app.use(express.json());
 
 app.use ('/', mainRouter);
 app.use('/products', productosRouter);
+app.use('/products/anillos', productosRouter);
+app.use('/products/collares', productosRouter);
+app.use('/products/aritos', productosRouter);
+app.use('/products/pulseras', productosRouter);
 app.use('/user', usersRouter);
 
 app.use(express.static('public'));

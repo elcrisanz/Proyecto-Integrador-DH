@@ -26,7 +26,73 @@
           </a> -->
       <% } %>
         </li>
-      <li><a href="/carrito"><i class="fas fa-shopping-cart fa-2x chart-icon"></i><br> Ir al Carrito</a></li>
+      <!-- <li><a href="/carrito"><i class="fas fa-shopping-cart fa-2x chart-icon"></i><br> Ir al Carrito</a></li> -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="carrito">
+          <div class="carrito-header">
+              <h1>Carrito de Compras</h1>
+          </div>
+          <div id="productos">
+
+          </div>
+          <div class="subtotal">
+              <div id="subtotal"></div>
+          </div>
+
+          <div class="envio" style="padding: 10px;">
+            <div class="input-group mb-3">
+              <input type="text" class="postal-code-input" placeholder="Código Postal">
+              <button class="btn btn-secondary btn-sm" type="button" id="button-addon2">Calcular Envío</button>
+            </div>
+            <a href="">No sé mi código postal</a>
+          </div>
+  
+          <div class="carrito-footer">
+            <div id="costoTotal">
+
+            </div>
+              <button class="btn btn-secondary btn-sm">INICIAR COMPRA</button>
+              <a href="#" onclick="closeNav()">SEGUIR COMPRANDO</a>
+          </div>
+      </div>
+      </div>
+
+      <li>
+        <span style="cursor:pointer" onclick="openNav()">
+          <i class="fas fa-shopping-cart fa-2x chart-icon"></i>
+          <br>
+          Ir al Carrito
+        </span>
+      </li>
+      
+      <script>
+        function openNav() {
+          let productos = JSON.parse(sessionStorage.getItem("carrito"));
+          let costoTotal = 0;
+          document.getElementById('productos').innerHTML = null;
+          document.getElementById('subtotal').innerHTML = null;
+          document.getElementById('costoTotal').innerHTML = null;
+          if (productos != null){
+            for (var i = 0; i < productos.length; i++) {
+              document.getElementById('productos').innerHTML += '<div class="cajaProducto"><img src="' + productos[i].imagen + '"><div class="descripcion"><h4>' + productos[i].nombre + '</h4><p>$ ' + productos[i].precio + '</p><div class="input-group mb-3"><button class="btn btn-secondary btn-sm" type="button" id="button-addon1"><i class="fas fa-minus"></i></button><input type="text" class="amount-input" placeholder="" value="1"><button class="btn btn-secondary btn-sm" type="button" id="button-addon2"><i class="fas fa-plus"></i></button></div></div><div class="eliminar"><p>$ ' + productos[i].precio + '</p><i class="fas fa-trash-alt" style="cursor:pointer"></i></div></div>';
+              costoTotal = costoTotal +  parseInt(productos[i].precio);
+            }
+            document.getElementById('subtotal').innerHTML += '<h3>SUBTOTAL (sin envio): $' + costoTotal + '</h3><p>FALTAN $550 PARA ACCEDER AL PRECIO MAYORISTA</p>';
+            document.getElementById('costoTotal').innerHTML += '<h2>TOTAL: $' + costoTotal + '</h2>';
+          } else {
+            document.getElementById('productos').innerHTML += '<h4 style="padding: 10px;">No posee productos en el carrito</h4>'
+          }
+          
+          document.getElementById("mySidenav").style.width = "500px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+
       <li><a href=""><i class="fas fa-heart fa-2x fav-icon"></i><br> Favoritos</a></li>
     </ul>
   </div>
@@ -47,19 +113,20 @@
         <i class="fas fa-chevron-down down-arrow"></i>
         <div class="ver">
           <ul class="header-drop-down">
-            <li><a href="#">Aros</a></li>
-            <li><a href="#">Anillos y midis</a></li>
-            <li><a href="#">Cadenas y Dijes</a></li>
-            <li><a href="#">Pulseras</a></li>
-            <li><a href="#">Tobilleras</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Ruanas y pañuelos</a></li>
-            <li><a href="#">Ellos</a></li>
-            <li><a href="#">Outlet</a></li>
+            <li><a href="/products/aritos">Aros</a></li>
+            <li><a href="/products/anillos">Anillos y midis</a></li>
+            <li><a href="/products">Cadenas y Dijes</a></li>
+            <li><a href="/products/pulseras">Pulseras</a></li>
+            <li><a href="/products/collares">Collares</a></li>
+            <li><a href="/products">Tobilleras</a></li>
+            <li><a href="/products">Accesorios</a></li>
+            <li><a href="/products">Ruanas y pañuelos</a></li>
+            <li><a href="/products">Ellos</a></li>
+            <li><a href="/products">Outlet</a></li>
           </ul>
         </div>
       </li>
-      <li><a href="#">Promociones</a></li>
+      <li><a href="/products">Promociones</a></li>
       <li><a href="#">Sobre Nosotras</a></li>
       <li><a href="#">Outlet</a></li>
       <li><a href="#">Contacto</a></li>
