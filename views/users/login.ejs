@@ -19,17 +19,19 @@
         <div class="form-floating col-md-9 mb-3 col-centered">
             <input type="email" class="form-control" id="loginEmailInput" placeholder="Correo Electronico" name="mail">
             <label for="loginEmailInput" class="form-label">Correo Electronico</label>
-            <% if (locals.errors && errors.email) { %>
+            <p class="email-validation"></p>
+            <!-- <% if (locals.errors && errors.email) { %>
                 <div>
                     <%= errors.email.msg %>
                 </div>
-            <% } %>
+            <% } %> -->
             <!-- style="width: 70%;height: 40px;" -->
         </div>
         <!-- <div class="controlForm"> -->
         <div class="form-floating col-md-9 col-centered">
             <input type="password" class="form-control" id="loginContraseña" placeholder="Contraseña" name="password">
             <label for="loginContraseña" class="form-label">Contraseña</label>
+            <p class="pass-validation"></p>
             <!-- style="width: 70%;height: 40px;" -->
         </div>
         <a id="fpassword" href="#">Olvidaste tu contraseña?</a>
@@ -48,5 +50,6 @@
         </div>
 
     </form>
+    <script src="/js/script.js"></script>
 </body>
 </html>
