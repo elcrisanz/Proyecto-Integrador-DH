@@ -20,9 +20,9 @@ html  {
     /* padding-bottom: 10rem; */
 }
 
-.row-catalog {
-    /* transform: translate(0%, -100%); */
-}
+/* .row-catalog {
+    transform: translate(0%, -100%);
+} */
 
 .row {
     max-width: 114rem;
@@ -141,6 +141,31 @@ html  {
     /* display: block; */
     /* transition: 9s !important; */
 }
+/* ///////////////////////////////////
+        CONTACTO FORM 
+/////////////////////////////////// */
+
+.contacto{
+    display: flex;
+    background-color: #f7f7f7;
+  }
+  .contact-form{
+    max-width: 50vw;
+    margin: left;
+    padding: 30px;
+    display: inline;
+  }
+  #map {    
+    height: 20% !important;
+    width: 10% !important;
+    overflow: visible !important;
+    position: absolute !important;
+    margin-top: 20%;
+    margin-left: 50%;
+  }
+  .text-danger{
+      color: 'red';
+  }
 
 /* ////////////////////////////////////////// */
 /* aca comienzan los estilos de los productos */
