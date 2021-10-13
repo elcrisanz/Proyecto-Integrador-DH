@@ -848,6 +848,16 @@ a{
     width: 25%;
     height: 25%;
 }
+  /* VALIDACIONES */
+
+.email-validation{
+    color: red;
+    display: none;
+}
+.pass-validation{
+    color: red;
+    display: none;
+}
 
 /* /////////////////////////////// */
 /* ///////MEDIA QUERIES/////////// */
@@ -1055,4 +1065,6 @@ a{
     .composition:hover .composition__photo:not(:hover) {
         transform: scale(1);
     }
+
+  
 }
