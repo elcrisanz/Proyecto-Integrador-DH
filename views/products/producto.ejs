@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-8 section-product-left-side">
                 <div class="product-principal-img" >
-                    <img src="/img/<%= productoDetalle.image %>" alt="" class="principal-photo" >
+                    <img src="/img/<%= productoDetalle.image %>" alt="" class="principal-photo" id="foto">
                 </div>
 
                 <br>
@@ -30,9 +30,9 @@
             </div>
             
             <div class="col section-product-right-side">
-                <h3><%=productoDetalle.name%> <i class="far fa-heart"></i> <i class="fas fa-share-alt"></i></h3>
+                <h3 id="nombre" style="display: inline;"><%=productoDetalle.name%> </h3> <i class="far fa-heart"></i> <i class="fas fa-share-alt"></i>
                 <p class="breadcrum">Página de inicio / PRODUCTOS / AROS / ARGOLLAS / <%=productoDetalle.name%></p>
-                <p class="price">$ <%=productoDetalle.price%></p>
+                <p class="price" id="precio">$ <%=productoDetalle.price%></p>
 
                 <label for="medida">Medida:</label>
                 <select name="medida" id="medida">
@@ -62,7 +62,44 @@
                     <button class="btn btn-primary product-button" type="button" id="button-addon2">Comprar</button>
                     <!-- <br>
                     <br> -->
-                    <button class="btn btn-outline-primary product-button" type="button" id="button-addon2">Agregar al carrito</button>
+                    <button class="btn btn-outline-primary product-button" type="button" id="button-addon2" onclick="agregarAlCarrito()">Agregar al carrito</button>
+
+                    <script>
+
+                        function agregarAlCarrito() {
+                            let yaExiste = false;
+                            let producto = new Object();
+                            producto.nombre = document.getElementById("nombre").innerHTML;
+                            producto.precio = document.getElementById("precio").innerHTML.slice(2);
+                            producto.imagen = document.getElementById("foto").src.slice(21);
+                         
+                            let productos = sessionStorage.getItem("carrito");
+                            console.log("productos: " + productos);
+                            if (productos == null) {
+                                productos = [];
+                            } else {
+                                productos = JSON.parse(productos);
+                            }
+                            
+                            for (var i = 0; i < productos.length; i++){
+                                if (productos[i].nombre == producto.nombre){
+                                    yaExiste = true;
+                                    break;
+                                }
+                            }
+
+                            if (!yaExiste){
+                                productos.push(producto);
+
+                            }
+
+                            sessionStorage.setItem("carrito", JSON.stringify(productos));
+                            console.log("storage: " + sessionStorage.getItem("carrito"));
+
+                            openNav()
+                        }
+                    </script>
+
                     <br>
                     <br>
                     <button onclick="location.href='../editar/<%=productoDetalle.id%>'" type="button" class="btn btn-warning" >Editar Producto</button>

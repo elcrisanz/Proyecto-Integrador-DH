@@ -185,6 +185,34 @@ const controlador = {
                     res.render('./products/productosTotales', { productos: products });
                 })
     },
+    productosAnillos: (req, res) => {
+        // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+            db.products.findAll()
+                .then(function (products){
+                    res.render('./products/productosAnillos', { productos: products });
+                })
+    },
+    productosAritos: (req, res) => {
+        // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+            db.products.findAll()
+                .then(function (products){
+                    res.render('./products/productosAritos', { productos: products });
+                })
+    },
+    productosCollares: (req, res) => {
+        // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+            db.products.findAll()
+                .then(function (products){
+                    res.render('./products/productosCollares', { productos: products });
+                })
+    },
+    productosPulseras: (req, res) => {
+        // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+            db.products.findAll()
+                .then(function (products){
+                    res.render('./products/productosPulseras', { productos: products });
+                })
+    },
         // res.render('./products/productosTotales', {productos: products});
     // },
 };
