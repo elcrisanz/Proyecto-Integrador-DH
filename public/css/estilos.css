@@ -883,6 +883,18 @@ a{
     color: red;
     display: none;
 }
+.register-pass-rePass{
+    color: red;
+    display: none;
+}
+.register-email-reEmail{
+    color: red;
+    display: none;
+}
+.register-avatar{
+    color: red;
+    display: none;
+}
 
 /* carrito de compras */
 
