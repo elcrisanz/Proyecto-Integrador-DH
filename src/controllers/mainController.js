@@ -10,6 +10,9 @@ const controlador = {
     carrito: (req,res) =>{
         res.render('./products/carrito-de-compras');
     },
+    favoritos: (req,res) =>{
+        res.render('./products/favoritos');
+    },
     perfil: (req, res) => {
         res.render('./users/perfil');
     },

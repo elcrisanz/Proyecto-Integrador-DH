@@ -15,6 +15,7 @@ const validations = [
 
 router.get('/', mainController.index);
 router.get('/carrito', mainController.carrito);
+router.get('/favoritos', mainController.favoritos);
 // router.get('/perfil', mainController.perfil)
 router.get('/aboutUs', mainController.aboutUs);
 router.get('/contacto', mainController.contacto);

@@ -34,7 +34,7 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id="carrito">
           <div class="carrito-header">
-              <h1>Carrito de Compras</h1>
+              <h2>Carrito de Compras</h2>
           </div>
           <div id="productos">
 
@@ -55,8 +55,8 @@
             <div id="costoTotal">
 
             </div>
-              <button class="btn btn-secondary btn-sm">INICIAR COMPRA</button>
-              <a href="#" onclick="closeNav()">SEGUIR COMPRANDO</a>
+              <button class="btn btn-secondary btn-sm" style="font-size: 1.6rem;">INICIAR COMPRA</button>
+              <a href="#" onclick="closeNav()" style="font-size: 1.5rem;">SEGUIR COMPRANDO</a>
           </div>
       </div>
       </div>
@@ -81,10 +81,10 @@
               document.getElementById('productos').innerHTML += '<div class="cajaProducto"><img src="' + productos[i].imagen + '"><div class="descripcion"><h4>' + productos[i].nombre + '</h4><p>$ ' + productos[i].precio + '</p><div class="input-group mb-3"><button class="btn btn-secondary btn-sm" type="button" id="button-addon1"><i class="fas fa-minus"></i></button><input type="text" class="amount-input" placeholder="" value="1"><button class="btn btn-secondary btn-sm" type="button" id="button-addon2"><i class="fas fa-plus"></i></button></div></div><div class="eliminar"><p>$ ' + productos[i].precio + '</p><i class="fas fa-trash-alt" style="cursor:pointer"></i></div></div>';
               costoTotal = costoTotal +  parseInt(productos[i].precio);
             }
-            document.getElementById('subtotal').innerHTML += '<h3>SUBTOTAL (sin envio): $' + costoTotal + '</h3><p>FALTAN $550 PARA ACCEDER AL PRECIO MAYORISTA</p>';
-            document.getElementById('costoTotal').innerHTML += '<h2>TOTAL: $' + costoTotal + '</h2>';
+            document.getElementById('subtotal').innerHTML += '<p style="font-size: 1.5rem;">SUBTOTAL (sin envio): $' + costoTotal + '</p>';
+            document.getElementById('costoTotal').innerHTML += '<p style="font-size: 1.7rem;">TOTAL: $' + costoTotal + '</p>';
           } else {
-            document.getElementById('productos').innerHTML += '<h4 style="padding: 10px;">No posee productos en el carrito</h4>'
+            document.getElementById('productos').innerHTML += '<P style="padding: 10px; font-size: 1.5rem;">No posee productos en el carrito</P>'
           }
           
           document.getElementById("mySidenav").style.width = "500px";
@@ -95,7 +95,7 @@
         }
       </script>
 
-      <li><a href=""><i class="fas fa-heart fa-2x fav-icon"></i><br> Favoritos</a></li>
+      <li><a href="/favoritos"><i class="fas fa-heart fa-2x fav-icon"></i><br> Favoritos</a></li>
     </ul>
   </div>
   <div class="burger-menu">

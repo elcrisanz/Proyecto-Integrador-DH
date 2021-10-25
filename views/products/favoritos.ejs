@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+  <title>Home</title>
+</head>
+<body style="background: #f7f7f7;">
+<!-- Header -->
+<%- include('../partials/header') %> 
+<!-- Main -->
+  <div class="row">
+  
+      <h2 class="products-title">Favoritos</h2>
+      <div id="favoritos" class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
+      </div>
+
+      <script>
+        let productos = JSON.parse(sessionStorage.getItem("favoritos"));
+        id = 1;
+
+        if (productos != null){
+            for (var i = 0; i < productos.length; i++) {
+              document.getElementById('favoritos').innerHTML += '<section class="product-box"><a href="/products/detalle/' + productos[i].id + '><figure class="product-box_image"><img src="' + productos[i].imagen + '" alt="imagen de producto" style="height: 20rem; width: 100%;"> </figure><article class="product-box_data"><h2>$ ' + productos[i].precio + '</h2><p>' + productos[i].nombre + '</p></article></a></section>'
+            }
+          } else {
+            document.getElementById('favoritos').innerHTML += '<h4 style="padding: 10px;">No posee productos en Favoritos</h4>'
+          }
+        </script>
+  
+  </div>
+
+<!-- Footer -->
+<%- include('../partials/footer') %>     
+</body>
+</html>
