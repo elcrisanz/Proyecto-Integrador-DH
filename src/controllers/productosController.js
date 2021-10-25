@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-let db = require ('../../database/models')
+let db = require ('../../database/models');
+const Op = db.Sequelize.Op;
 
 // const productsFilePath = path.join(__dirname, './../data/productsDB.json');
 // const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -215,6 +216,19 @@ const controlador = {
     },
         // res.render('./products/productosTotales', {productos: products});
     // },
-};
+    search: (req, res) => {
+        let search= req.query.query
+            db.products.findAll({
+                where:{
+                    name:{
+                         [Op.like]: '%'+search+'%'
+                        }
+                     }
+                 })
+                .then(function (products){
+                    res.render('./products/productosBuscados', { productos: products });
+         })               
+     }
+}
 
 module.exports = controlador;

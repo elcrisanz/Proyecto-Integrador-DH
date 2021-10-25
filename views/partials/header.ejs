@@ -1,10 +1,12 @@
 <header class="main-header">
   <div class="main-header-top-bar">
     <a href="/" class="logo-anchor"><img src="/img/Logo-transparente.png" class="logo"></a>
+    <form action="/products/search" method= GET class="search-bar-box">
     <div class="search-bar-box">
-      <input class="search-bar" type="text" placeholder="Buscar productos...">
-      <button type="submit" class="search-bar-btn"><i class="fas fa-search search-icon"></i></button>
-    </div>
+        <input class="search-bar" type="text" placeholder="Buscar productos..." name='query'>
+        <button type="submit" value= 'search' class="search-bar-btn"><i class="fas fa-search search-icon"></i></button>
+      </div>
+    </form>
     <ul class="nav-right">
       <li>
         <i class="fas fa-user-circle fa-2x login-icon"></i>
