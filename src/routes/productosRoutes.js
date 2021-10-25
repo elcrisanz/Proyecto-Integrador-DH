@@ -21,5 +21,7 @@ router.put('/editar/:id', uploadFile.single('fotoProducto'), productosController
 
 router.delete('/:id', productosController.destroy)
 
+router.get('/search', productosController.search);
+
 
 module.exports = router;  

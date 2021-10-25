@@ -20,6 +20,7 @@ app.use(userLoggedMiddleware);
 const productosRouter = require ('./src/routes/productosRoutes')
 const usersRouter = require ('./src/routes/usersRoutes')
 const mainRouter = require('./src/routes/mainRoutes')
+const apisRouter = require ('./src/routes/apisRoutes')
 
 const methodOverride = require('method-override');
 // const { findByEmail } = require('./src/controllers/usersController');
@@ -35,6 +36,8 @@ app.use('/products/collares', productosRouter);
 app.use('/products/aritos', productosRouter);
 app.use('/products/pulseras', productosRouter);
 app.use('/user', usersRouter);
+app.use('/api', apisRouter);
+
 
 app.use(express.static('public'));
 
