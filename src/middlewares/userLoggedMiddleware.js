@@ -28,7 +28,9 @@ function userLoggedMiddleware(req,res,next) {
     if(req.session.userLogged){
     res.locals.isLogged=false; 
     res.locals.userLogged=req.session.userLogged;
-
+    res.locals.isAdmin = JSON.stringify(res.locals.userLogged.admin);
+    // console.log("isAdmin: " + res.locals.isAdmin)
+    
     }
     next();
 }
