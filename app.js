@@ -47,5 +47,5 @@ app.use(express.static('public'));
 app.set ('view engine', 'ejs');
 
 app.listen(process.env.PORT || 3001, function () {
-  console.log("Corriendo servidor en el puerto 3000");
+  console.log("Corriendo servidor en el puerto 3001");
 });
