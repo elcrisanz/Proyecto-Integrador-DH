@@ -11,9 +11,11 @@
   <div class="row">
   
       <h2 class="products-title">Todos los productos</h2>  
+      <% if (locals.isAdmin == 1) { %> 
       <form action="/products/agregar">     
         <button type="submit" class="btn btn-outline-info add-product" >Agregar Producto</button>
       </form>
+      <% } %>
     
   
     <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
@@ -36,9 +38,11 @@
   <div class="row">
   
     <h2 class="products-title">Anillos</h2>  
+    <% if (locals.isAdmin == 1) { %> 
     <form action="/products/agregar">     
       <button type="submit" class="btn btn-outline-info add-product" >Agregar Anillo</button>
     </form>
+    <% } %>
   
 
   <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
@@ -63,10 +67,12 @@
 
 <div class="row">
   
-  <h2 class="products-title">Aritos</h2>  
+  <h2 class="products-title">Aritos</h2> 
+  <% if (locals.isAdmin == 1) { %>  
   <form action="/products/agregar">     
     <button type="submit" class="btn btn-outline-info add-product" >Agregar Arito</button>
   </form>
+  <% } %>
 
 
 <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
@@ -92,9 +98,11 @@
 <div class="row">
   
   <h2 class="products-title">Collares</h2>  
+  <% if (locals.isAdmin == 1) { %> 
   <form action="/products/agregar">     
     <button type="submit" class="btn btn-outline-info add-product" >Agregar Collar</button>
   </form>
+  <% } %>
 
 
 <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
@@ -119,10 +127,12 @@
 
 <div class="row">
   
-  <h2 class="products-title">Pulseras</h2>  
+  <h2 class="products-title">Pulseras</h2> 
+  <% if (locals.isAdmin == 1) { %>  
   <form action="/products/agregar">     
     <button type="submit" class="btn btn-outline-info add-product" >Agregar Pulsera</button>
   </form>
+  <% } %>
 
 
 <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">

@@ -105,7 +105,7 @@ const controlador = {
             name: req.body.name,
             last_name: req.body.lastName,
             password: bcryptjs.hashSync(req.body.password,10),
-            email: req.body.email,
+            email: req.body.mailRegistro,
             avatar: req.file.filename
         }).then(user => {
             usuarioNuevo = user

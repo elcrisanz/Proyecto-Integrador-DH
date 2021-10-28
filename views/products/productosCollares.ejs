@@ -10,11 +10,12 @@
 <!-- Main -->
   <div class="row">
   
-      <h2 class="products-title">Collares</h2>  
+      <h2 class="products-title">Collares</h2>
+      <% if (locals.isAdmin == 1) { %>  
       <form action="/products/agregar">     
         <button type="submit" class="btn btn-outline-info add-product" >Agregar Producto</button>
       </form>
-    
+      <% } %>    
   
     <div class="col-12" style="display: flex; flex-wrap: wrap; margin-left: 1%;">
       <% for(let producto of productos) { %>
