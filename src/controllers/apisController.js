@@ -7,7 +7,9 @@ const controlador = {
         let category1=0;
         let category2=0;
         let category3=0;
-        let category4=0; 
+        let category4 = 0;
+        let totalAmount = 0;
+        let lastProduct;
 
         db.products.findAll()
             .then(function (products){
@@ -22,17 +24,25 @@ const controlador = {
                         category4 = category4+1;
                     }
                 }
+                for (product of products) {
+                    totalAmount = totalAmount + Number(product.price)
+                }
+                lastProduct = products.pop();
             
                 return res.status(200).json({
-                count: products.length,
-                countByCategories: {
-                    category1: category1,
-                    category2: category2,
-                    category3: category3,
-                    category4: category4
-                },
-                products: products,
-                status:200
+                data: {    
+                    count: products.length,
+                    countByCategories: {
+                        category1: category1,
+                        category2: category2,
+                        category3: category3,
+                        category4: category4
+                    },
+                    products: products,
+                    lastProduct: lastProduct,
+                    totalAmount: totalAmount,
+                    status: 200
+                }
             });
         })
     },
@@ -51,9 +61,11 @@ const controlador = {
         db.users.findAll()
             .then(function (users){
                 return res.status(200).json({
-                count: users.length,
-                users: users,
-                status:200
+                data: {    
+                    count: users.length,
+                    users: users,
+                    status: 200
+                }
             });
         })
     },
@@ -79,8 +91,11 @@ const controlador = {
         db.categories.findAll()
         .then(function (categories){
             return res.status(200).json({
-            count: categories.length,
-            status:200
+            data:{    
+                count: categories.length,
+                category: categories,
+                status: 200
+            }
             })    
         })
     }

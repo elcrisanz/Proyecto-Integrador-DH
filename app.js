@@ -2,6 +2,7 @@ const express = require('express')
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const app = express()
+const cors = require('cors');
 
 
 // ************ Middlewares - (don't touch) ************
@@ -15,6 +16,7 @@ app.use(session( {
 
 app.use(cookieParser());
 app.use(userLoggedMiddleware);
+app.use(cors())
 
 
 const productosRouter = require ('./src/routes/productosRoutes')
@@ -44,6 +46,6 @@ app.use(express.static('public'));
 
 app.set ('view engine', 'ejs');
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || 3001, function () {
   console.log("Corriendo servidor en el puerto 3000");
 });
