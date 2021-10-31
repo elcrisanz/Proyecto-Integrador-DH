@@ -8,8 +8,11 @@
 <!-- Header -->
 <%- include('../partials/header') %> 
 <!-- Main -->
+    <div class="perfil">
+        <h3>Bienvenido <%=user.name%> </h3>
+    </div>
 
-    <section class="perfil">
+    <section class="perfil" style="padding-bottom: 50px;">
         <img src="/img/<%=user.avatar %> " alt="" class="foto-de-perfil" >
 
         <div style="padding-left: 25px;">

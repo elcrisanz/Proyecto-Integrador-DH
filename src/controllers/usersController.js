@@ -34,7 +34,7 @@ const controlador = {
         
         if (userToLogin) {
             let isOkThePassword;
-            if (userToLogin.password == req.body.password) {
+            if (bcryptjs.compareSync(req.body.password,userToLogin.password)) {
                 isOkThePassword = userToLogin.password
             }
             if (isOkThePassword) {
@@ -42,7 +42,7 @@ const controlador = {
                 req.session.userLogged = userToLogin;
 
                 if(req.body.remember_user){
-                    res.cookie('userEmail', req.body.mail,{maxAge: 1000 * 120})
+                    res.cookie('userEmail', req.body.mail, { maxAge: 1000 * 120 })
                 }
                 // return res.redirect('/user/profile');
                 console.log("el login salio bien")

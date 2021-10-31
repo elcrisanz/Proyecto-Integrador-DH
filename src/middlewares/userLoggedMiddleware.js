@@ -13,6 +13,7 @@ function userLoggedMiddleware(req,res,next) {
     
     let emailInCookie = req.cookies.userEmail;
     let userFromCookie;
+    console.log("EMAILINCOOKIE",emailInCookie)
     allDbUsers.forEach(element => {
         if (element.email == emailInCookie) {
             userFromCookie = element
